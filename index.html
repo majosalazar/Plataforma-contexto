@@ -16,9 +16,9 @@
 </head>
 
 <body>
+  
   <!-- navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <h1>PRUEBA</h1>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-contexto">
     <a class="navbar-brand" href="#">
       <img src="img/logo.svg" height="30" alt="" loading="lazy">
     </a>
@@ -32,50 +32,80 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Quiénes somos</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
+            Recursos</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Opinión experta</a>
+            <a class="dropdown-item" href="#">Compara constituciones</a>
+            <a class="dropdown-item" href="#">Documentos descargables</a>
+            <a class="dropdown-item" href="#">Multimedia</a>
+            <!-- 
+              <a class="dropdown-item" href="#">Videos</a>
+              <a class="dropdown-item" href="#">Podcast</a>
+              <a class="dropdown-item" href="#">Infografías</a>
+            -->
+
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Contexto factual</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Noticias</a>
+            <a class="dropdown-item" href="#">Reportajes</a>
+            <a class="dropdown-item" href="#">Consejo editorial</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Preguntas y Respuestas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Búsqueda</button>
       </form>
     </div>
   </nav>
 
   
-  <section class="container">
+  <div class="container-fluid fondo-crema">
     <div class="row">
-      <div class="col-md-10">
-        <img src="https://images.unsplash.com/photo-1589878607851-0e47eb9870d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-
-        <img src="https://images.unsplash.com/photo-1589878607851-0e47eb9870d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-
-        <img src="https://images.unsplash.com/photo-1589878607851-0e47eb9870d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
-
-        <img src="https://images.unsplash.com/photo-1589878607851-0e47eb9870d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="">
+      <div class="">
+        <img src="img/isotipo.svg" alt="" class="isotipo">
+        <p class="texto-principal">Somos un espacio libre de propaganda política, que entrega información fidedigna, traducuiendo contenido teórico complejo y abtracto a nuestro lenguaje y vida cotidiana</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fondo-rojo">
+    <div class="row">
+      <div class="col-12">
+        <p class="titulo-principal">Recursos</p>
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+        </p>
+        
 
       </div>
 
     </div>
-  </section>
+    
+
+  </div>
 
 
   <!-- bootstrap script -->
