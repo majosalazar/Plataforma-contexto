@@ -7,6 +7,11 @@
   --negro: #000000;
 }
 
+@font-face{
+  font-family:"spacegrotesk";
+  src: url(/css/spacegrotesk/);
+}
+
 body {
   font-family: Karla;
   font-style: normal;
@@ -17,6 +22,11 @@ body {
 
   color: #000000;
 
+}
+
+#h1 {
+  font-family:"spacegrotesk";
+  
 }
 
 .logo {
