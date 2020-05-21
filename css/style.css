@@ -7,9 +7,13 @@
   --negro: #000000;
 }
 
-@font-face{
-  font-family:"spacegrotesk";
-  src: url(/css/spacegrotesk/);
+@font-face {
+  font-family: 'spacegrotesk';
+  src: url(/css/spacegrotesk/SpaceGrotesk-Bold.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Light.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf)format('otf');
 }
 /*
 body {
@@ -24,10 +28,6 @@ body {
 
 }*/
 
-#h1 {
-  font-family:"spacegrotesk";
-
-}
 #a {
   font-family: Karla;
   font-style: normal;
@@ -37,6 +37,11 @@ body {
   display: flex;
 
   color: #000000;
+  
+}
+  
+h1, h2, h3 {
+  font-family: 'spacegrotesk';
 }
 
 .logo {
@@ -58,6 +63,7 @@ body {
 
 .fondo-rojo {
   background-color: var(--rojo);
+  height: 100vh;
 
 }
 
@@ -116,11 +122,20 @@ body {
   box-sizing: border-box;
 }
 
-.card-bordes {
+.card-contexto {
   background: #FFFFFF;
   border: 3px solid #000000;
   box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+}
+
+.icon-card {
+  width: 55px;
 }
 
 
@@ -134,3 +149,9 @@ body {
 
   }
 }
+
+.carousel .carousel-inner img {
+  display:block;
+  object-fit: cover;
+}
+

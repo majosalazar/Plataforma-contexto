@@ -17,6 +17,7 @@
 
 <body>
 
+
   <!-- NAVBAR -->
   <section class="container-sm">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light navbar-contexto">
@@ -87,46 +88,51 @@
   </section>
 
 
-  <!-- presentación 
-  <section>
-    <div class="container-fluid fondo-crema">
-      <div class="row">
-        <div class="col-3">
-          <p class="texto-principal">Somos un espacio libre de propaganda política, que entrega información fidedigna,
-            traducuiendo contenido teórico complejo y abtracto a nuestro lenguaje y vida cotidiana</p>
-        </div>
-        <div class="col-9">
-          <img src="img/isotipo.svg" alt="" class="isotipo">
-        </div>
+  <!-- estructura inicial -->
+  <div class="container-fluid">
+
+    <!-- presentación -->
+    <div class="row fondo-crema">
+      <div class="">
+        <img src="img/isotipo.svg" alt="" class="isotipo">
+        <p class="texto-principal">Somos un espacio libre de propaganda política, que entrega información fidedigna,
+          traducuiendo contenido teórico complejo y abtracto a nuestro lenguaje y vida cotidiana</p>
       </div>
     </div>
-  </section>-->
-  <!-- recursos 
-  <div class="container-fluid fondo-rojo">
-    <div class="row">
+    <!-- fin estructura inicial-->
+
+
+
+
+
+
+
+    <!-- recursos -->
+    <div class="row fondo-rojo">
+
       <div class="col-12">
         <p class="titulo-principal">Recursos</p>
-        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+        <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore
+          et dolore magna aliqua.
         </p>
 
-    
-        
-        <div class="card-bordes mb-3 w-100">
+        <div class="card-contexto w-100">
           <div class="row">
             <div class="col-3">
-              <img src="img/isotipo.svg" class="card-body" alt="...">
+              <img src="img/isotipo.svg" class="icon-card" alt="...">
             </div>
             <div class="col-9">
-              <div class="card-body">
-                <h5 class="card-title">Opinión experta</h5>
-                <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               
+              <div class="">
+                <h3 class="card-title">Opinión experta</h3>
+                <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="card-bordes mb-3 w-100">
+
+        <div class="card-contexto w-100">
           <div class="row">
             <div class="col-3">
               <img src="img/isotipo.svg" class="card-body" alt="...">
@@ -134,31 +140,81 @@
             <div class="col-9">
               <div class="card-body">
                 <h5 class="card-title">Compara constituciones</h5>
-                <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-               
+                <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+
               </div>
             </div>
           </div>
-
         </div>
-
-      
-
-      </div>
-
-    </div>
-    
-
-  </div>
-
-  <div class="container-fluid fondo-azul">
-    <div class="row">
-      <div class="col-12">
-        <h1>Contexto Factual</h1>
       </div>
     </div>
+    <!-- fin recursos -->
+
+
+
+
+    <!-- carrusel -->
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row fondo-crema">
+            <div class="w-100">
+              <img src="img/isotipo.svg" alt="" class="isotipo">
+              <p class="texto-principal">Somos un espacio libre de propaganda política, que entrega información
+                fidedigna,
+                traducuiendo contenido teórico complejo y abtracto a nuestro lenguaje y vida cotidiana</p>
+            </div>
+          </div>
+  
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="row fondo-crema">
+            <div class="">
+              <img src="img/isotipo.svg" alt="" class="isotipo">
+              <p class="texto-principal">CACA</p>
+            </div>
+          </div>
+  
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+  
+          <div class="row fondo-rojo">
+            <div class="">
+              <img src="img/isotipo.svg" alt="" class="isotipo">
+              <p class="texto-principal">CACA</p>
+            </div>
+          </div>
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- fin carrusel -->
 
   </div>-->
+
+
+
+
+
+
+
 
 
   <!-- bootstrap script -->
