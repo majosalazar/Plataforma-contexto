@@ -11,7 +11,7 @@
   font-family:"spacegrotesk";
   src: url(/css/spacegrotesk/);
 }
-
+/*
 body {
   font-family: Karla;
   font-style: normal;
@@ -22,11 +22,21 @@ body {
 
   color: #000000;
 
-}
+}*/
 
 #h1 {
   font-family:"spacegrotesk";
-  
+
+}
+#a {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+
+  color: #000000;
 }
 
 .logo {
@@ -37,6 +47,7 @@ body {
   background-color: var(--blanco);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 60px;
+  position: absolute;
 }
 
 .fondo-crema {
@@ -99,6 +110,11 @@ body {
   color: #000000;
 }
 
+.form-control-sm{
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
 
 .card-bordes {
   background: #FFFFFF;
