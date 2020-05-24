@@ -11,7 +11,7 @@ p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 19px;
 
   color: #000000;
@@ -54,7 +54,7 @@ p {
   font-family: Space Grotesk;
   font-style: normal;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 2.2em;
   line-height: 48px;
   text-align: center;
 
@@ -65,7 +65,7 @@ p {
   font-family: Space Grotesk;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.2em;
   line-height: 48px;
   text-align: left;
 
@@ -76,8 +76,8 @@ p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 1.8em;
+  line-height: 30px;
   display: flex;
   align-items: center;
   letter-spacing: 0.44px;
@@ -108,15 +108,16 @@ p {
 }
 
 
-@media(min-width: 375px) and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .isotipo {
     position: absolute;
     left: 28.27%;
     right: 28.53%;
     top: 9.17%;
     bottom: 60.61%;
-
   }
+
+  
 }
 
 
