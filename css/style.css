@@ -109,6 +109,7 @@ p {
   border: 3px solid #000000;
   box-sizing: border-box;
   margin-bottom: 50px;
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
@@ -119,15 +120,12 @@ p {
   background: #FFFFFF;
   border: 3px solid #000000;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .icono-card {
   width: 55px;
 
-}
-
-.resumen {
-  margin-bottom: 60px;
 }
 
 h3 {
