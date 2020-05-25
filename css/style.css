@@ -108,11 +108,17 @@ p {
   background: #FFFFFF;
   border: 3px solid #000000;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.card-img {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  margin-bottom: 50px;
 }
 
 .icono-card {
@@ -134,6 +140,10 @@ h3 {
   vertical-align: middle;
 }
 
+.card-body {
+  padding: 15px;
+}
+
 
 @media (min-width: 768px) {
   .isotipo {
@@ -150,11 +160,15 @@ h3 {
   .card-contexto {
     border: 5px solid #000000;
     box-sizing: border-box;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .card-img {
+    border: 5px solid #000000;
   }
 
   .frase {
