@@ -176,10 +176,10 @@ h3 {
 
 
 @font-face {
-  font-family: 'spacegrotesk';
-  src: url(/css/spacegrotesk/SpaceGrotesk-Bold.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Light.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf)format('otf');
+  font-family: 'Space grotesk';
+  src: url('/css/spacegrotesk/SpaceGrotesk-Bold.otf')format('otf');
+  src: url('/css/spacegrotesk/SpaceGrotesk-Light.otf')format('otf');
+  src: url('/css/spacegrotesk/SpaceGrotesk-Medium.otf')format('otf');
+  src: url('/css/spacegrotesk/SpaceGrotesk-Regular.otf')format('otf');
+  src: url('/css/spacegrotesk/SpaceGrotesk-SemiBold.otf')format('otf');
 }
