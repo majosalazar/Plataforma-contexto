@@ -7,85 +7,87 @@
   --negro: #000000;
 }
 
-@font-face {
-  font-family: 'spacegrotesk';
-  src: url(/css/spacegrotesk/SpaceGrotesk-Bold.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Light.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf)format('otf');
-  src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf)format('otf');
-}
-/*
-body {
+p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
-  display: flex;
 
   color: #000000;
-
-}*/
-
-#a {
-  font-family: Karla;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
-
-  color: #000000;
-  
 }
-  
-h1, h2, h3 {
-  font-family: 'spacegrotesk';
-}
+
 
 .logo {
   height: 30px;
 }
 
-
 .navbar-contexto {
-  background-color: var(--blanco);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+  background-color: white;
+}
+
+.fondo-inicial {
+  background-color: var(--crema);
+  height: 100vh;
+  margin-top: 60px;
 }
 
 .fondo-crema {
   background-color: var(--crema);
-  height: 100vh;
-
 }
 
 .fondo-rojo {
   background-color: var(--rojo);
-  height: 100vh;
-
 }
 
+.fondo-azul {
+  background-color: var(--azul);
+}
+
+.fondo-amarillo {
+  background-color: var(--amarillo);
+}
 
 .isotipo {
-  position: absolute;
-  left: 30%;
-  top: 25%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 7em;
+  margin-bottom: 5em;
+  
 }
 
-.texto-principal {
-  position: absolute;
-  left: 8%;
-  right: 8%;
-  top: 32.43%;
-  bottom: 15.96%;
+.titulo {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 70px;
 
+  color: #000000;
+}
+
+.titulo-card {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: left;
+
+  color: #000000;
+}
+
+.frase {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 25px;
+  line-height: 30px;
   display: flex;
   align-items: center;
   letter-spacing: 0.44px;
@@ -93,30 +95,7 @@ h1, h2, h3 {
   color: #000000;
 }
 
-.titulo-principal {
-
-  font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-
-  color: #000000;
-}
-
-.texto {
-  font-family: Karla;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
-
-  color: #000000;
-}
-
-.form-control-sm{
+.form-control-sm {
   background: #FFFFFF;
   border: 2px solid #000000;
   box-sizing: border-box;
@@ -131,27 +110,73 @@ h1, h2, h3 {
   padding-right: 15px;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
-.icon-card {
+.icono-card {
   width: 55px;
+
 }
 
-/*
-@media(min-width: 375px) and (max-width: 600px) {
+.resumen {
+  margin-bottom: 60px;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.alinear-v {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+@media (min-width: 768px) {
   .isotipo {
-    position: absolute;
     left: 28.27%;
     right: 28.53%;
-    top: 9.17%;
-    bottom: 60.61%;
-
+    width: 100px;
   }
-}*/
 
-.carousel .carousel-inner img {
-  display:block;
-  object-fit: cover;
+  .titulo {
+    font-size: 50px;
+    line-height: 48px;
+  }
+
+  .card-contexto {
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .frase {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.44px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .titulo-card {
+    font-size: 22px;
+  }
 }
 
+
+
+
+@font-face {
+  font-family: 'spacegrotesk';
+  src: url(/css/spacegrotesk/SpaceGrotesk-Bold.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Light.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf)format('otf');
+  src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf)format('otf');
+}
