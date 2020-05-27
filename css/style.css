@@ -55,14 +55,14 @@ p {
   margin-left: auto;
   margin-top: 7em;
   margin-bottom: 5em;
-  
+
 }
 
 .titulo {
   font-family: Space Grotesk;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
   text-align: center;
   margin-top: 80px;
@@ -105,7 +105,8 @@ p {
   background: #FFFFFF;
   border: 3px solid #000000;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 20px;
@@ -115,7 +116,8 @@ p {
 .card-img {
   background: #FFFFFF;
   border: 3px solid #000000;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .icono-card {
@@ -123,8 +125,12 @@ p {
 
 }
 
-.resumen {
-  margin-bottom: 60px;
+.gesto {
+  position: absolute;
+  left: 34.13%;
+  right: 34.05%;
+  top: 135px;
+  
 }
 
 h3 {
@@ -141,6 +147,10 @@ h3 {
   padding: 15px;
 }
 
+.img-carrusel {
+  height: 100vh;
+  background-color: var(--crema);
+}
 
 @media (min-width: 768px) {
   .isotipo {
@@ -157,7 +167,7 @@ h3 {
   .card-contexto {
     border: 5px solid #000000;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 25px;
@@ -180,6 +190,11 @@ h3 {
 
   .titulo-card {
     font-size: 22px;
+  }
+
+  .gesto {
+    position: absolute;
+    left: 45%;
   }
 }
 
