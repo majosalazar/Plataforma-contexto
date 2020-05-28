@@ -37,6 +37,10 @@ p {
   background-color: var(--crema);
 }
 
+.fondo-negro {
+  background-color: var(--negro);
+}
+
 .fondo-rojo {
   background-color: var(--rojo);
 }
