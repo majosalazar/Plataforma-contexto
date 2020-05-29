@@ -7,7 +7,47 @@
   --negro: #000000;
 }
 
-.resumen{
+.buscar {
+  display: flex;
+  background-color: var(--crema);
+  border-radius: 4px;
+  padding: 5px;
+  
+}
+
+.buscar_texto {
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--negro);
+  font-size: 14px;
+  float: left;
+  line-height: 5px;
+  transition: .3s;
+  width: 0;
+}
+
+.boton {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: var(--negro);
+  font-size: 14px;
+}
+
+@media screen and (min-width:480px) {
+  .buscar:hover>.buscar_texto {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .buscar:hover>.buscar_texto {
+    width: 200px;
+  }
+}
+
+.resumen {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
@@ -140,13 +180,13 @@ p {
 }
 
 .gesto {
-  
-  display:block;
+
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   top: 135px;
-  
+
 }
 
 h3 {
@@ -176,57 +216,60 @@ h3 {
     width: 100px;
   }
 
-  .resumen{
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 19px;
-  
-    color: #000000;
-  }
 
-  .titulo {
-    font-size: 50px;
-    line-height: 48px;
-  }
+}
 
-  .card-contexto {
-    border: 5px solid #000000;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+.resumen {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 19px;
 
-  .card-img {
-    border: 5px solid #000000;
-  }
+  color: #000000;
+}
 
-  .frase {
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: 0.44px;
-  }
+.titulo {
+  font-size: 50px;
+  line-height: 48px;
+}
 
-  p {
-    font-size: 18px;
-  }
+.card-contexto {
+  border: 5px solid #000000;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
-  .titulo-card {
-    font-size: 22px;
-  }
+.card-img {
+  border: 5px solid #000000;
+}
 
-  .gesto {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    width: 150px;
-    
-  }
+.frase {
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.44px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.titulo-card {
+  font-size: 22px;
+}
+
+.gesto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 150px;
+
+}
 }
 
 
