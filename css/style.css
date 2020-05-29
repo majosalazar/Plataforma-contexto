@@ -70,7 +70,7 @@ p {
   line-height: 48px;
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 
   color: #000000;
 }
@@ -130,9 +130,11 @@ p {
 }
 
 .gesto {
-  position: absolute;
-  left: 34.13%;
-  right: 34.05%;
+  
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
   top: 135px;
   
 }
@@ -197,8 +199,12 @@ h3 {
   }
 
   .gesto {
-    position: absolute;
-    left: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 150px;
+    
   }
 }
 
