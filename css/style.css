@@ -22,9 +22,25 @@
   color: var(--negro);
   font-size: 14px;
   float: left;
-  line-height: 5px;
+  line-height: 40px;
   transition: .3s;
   width: 0;
+}
+
+/* compatible para navegadores */
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  line-height:40px;
+}
+::-webkit-input-placeholder { /* Webkit */
+  line-height:40px;
+}
+:-ms-input-placeholder { /* IE */
+  line-height:40px;
+}
+
+.dropdown-toggle::after {
+  margin-left: .5em !important;
+  vertical-align: 0.15em !important;
 }
 
 .boton {
@@ -33,6 +49,10 @@
   text-decoration: none;
   color: var(--negro);
   font-size: 14px;
+}
+
+.buscar-mobile{
+  background-color: var(--crema);
 }
 
 @media screen and (min-width:480px) {
@@ -185,6 +205,8 @@ p {
 
 .form-control-sm {
   background: var(--crema);
+  border: none;
+  line-height: 40px !important;
 }
 
 .card-contexto {
