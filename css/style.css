@@ -212,68 +212,145 @@ h3 {
   background-color: var(--crema);
 }
 
-/*MEDIDAS PARA DESKTOP*/
+.icono-qa {
+  width: 250px;
+}
+
+
+.card-qa {
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.card-pregunta {
+  background-color: var(--white);
+  border: 3px solid #000000;
+}
+
+.card-respuesta {
+  background-color: var(--crema);
+
+  padding: 20px;
+  /* or 147% */
+
+  display: flex;
+  align-items: center;
+}
+
+.btn-pregunta {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  padding: 20px;
+}
+
+.icono-down {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.btn-contexto {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flecha-gesto {
+  width: 100px;
+}
+
+
+
 @media (min-width: 768px) {
   .isotipo {
     left: 28.27%;
     right: 28.53%;
     width: 100px;
   }
-
-
-}
-
-.resumen {
+  
+  .resumen {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 19px;
-
   color: #000000;
-}
+  }
 
-.titulo {
+  .titulo {
   font-size: 50px;
   line-height: 48px;
+  }
+
+  
+  .gesto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 150px;
+  }
+
+  .icono-qa {
+    width: 250px;
+  }
+
+  .card-pregunta {
+    background-color: var(--white);
+    border: 5px solid #000000;
+  }
+
+  .btn-contexto {
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    display: flex;
+    justify-content: flex-end
+  }
+  
+  
+  .card-contexto {
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .card-img {
+    border: 5px solid #000000;
+  }
+
+  .frase {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.44px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .titulo-card {
+    font-size: 22px;
+  }
+  
 }
 
-.card-contexto {
-  border: 5px solid #000000;
-  box-sizing: border-box;
-  margin-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 
-.card-img {
-  border: 5px solid #000000;
-}
 
-.frase {
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: 0.44px;
-}
-
-p {
-  font-size: 18px;
-}
-
-.titulo-card {
-  font-size: 22px;
-}
-
-.gesto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
-  width: 150px;
-
-}
 
 
 
