@@ -12,7 +12,7 @@
   background-color: var(--crema);
   border-radius: 4px;
   padding: 5px;
-  
+
 }
 
 .buscar_texto {
@@ -72,6 +72,13 @@ p {
   height: 30px;
 }
 
+.logos-footer {
+  width: 60%;
+  margin-left: auto;
+  
+}
+
+
 .navbar-contexto {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
@@ -125,6 +132,17 @@ p {
   color: #000000;
 }
 
+.titulo-footer {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
 .titulo-card {
   font-family: Space Grotesk;
   font-style: normal;
@@ -149,10 +167,20 @@ p {
   color: #000000;
 }
 
-.nav-link{
+.nav-link {
   color: var(--negro);
   font-family: karla;
   font-size: 16px;
+}
+
+.texto-footer {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff
 }
 
 .form-control-sm {
@@ -278,22 +306,22 @@ h3 {
     right: 28.53%;
     width: 100px;
   }
-  
+
   .resumen {
-  font-family: Karla;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 19px;
-  color: #000000;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
   }
 
   .titulo {
-  font-size: 50px;
-  line-height: 48px;
+    font-size: 50px;
+    line-height: 48px;
   }
 
-  
+
   .gesto {
     display: block;
     margin-left: auto;
@@ -317,8 +345,8 @@ h3 {
     display: flex;
     justify-content: flex-end
   }
-  
-  
+
+
   .card-contexto {
     border: 5px solid #000000;
     box-sizing: border-box;
@@ -346,7 +374,7 @@ h3 {
   .titulo-card {
     font-size: 22px;
   }
-  
+
 }
 
 
