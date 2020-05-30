@@ -72,6 +72,13 @@ p {
   height: 30px;
 }
 
+.logos-footer {
+  width: 60%;
+  margin-left: auto;
+  
+}
+
+
 .navbar-contexto {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: white;
@@ -125,6 +132,17 @@ p {
   color: #000000;
 }
 
+.titulo-footer {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48px;
+  text-align: left;
+
+  color: #ffffff;
+}
+
 .titulo-card {
   font-family: Space Grotesk;
   font-style: normal;
@@ -153,6 +171,16 @@ p {
   color: var(--negro);
   font-family: karla;
   font-size: 16px;
+}
+
+.texto-footer {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #ffffff
 }
 
 .form-control-sm {
