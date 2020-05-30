@@ -149,10 +149,14 @@ p {
   color: #000000;
 }
 
+.nav-link{
+  color: var(--negro);
+  font-family: karla;
+  font-size: 16px;
+}
+
 .form-control-sm {
-  background: #FFFFFF;
-  border: 2px solid #000000;
-  box-sizing: border-box;
+  background: var(--crema);
 }
 
 .card-contexto {
@@ -270,7 +274,7 @@ p {
   width: 150px;
 
 }
-}
+
 
 
 
