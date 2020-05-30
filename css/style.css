@@ -61,8 +61,8 @@ p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 22px;
 
   color: #000000;
 }
@@ -241,7 +241,12 @@ h3 {
 }
 
 .icono-qa {
-  width: 250px;
+  width: 16em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  top: 135px;
 }
 
 
@@ -298,6 +303,62 @@ h3 {
   width: 100px;
 }
 
+.fecha {
+  background-color: var(--negro);
+  position: absolute;
+  width: 100px;
+  height: 110px;
+}
+
+.fecha-dia {
+  font-size: 60px;
+  color: var(--blanco);
+  position: absolute;
+  width: 71px;
+  height: 82px;
+  left: 14px;
+  top: 25px;
+
+}
+
+.fecha-mes {
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  width: 70px;
+  height: 33px;
+  left: 15px;
+  top: 70px;
+}
+
+.flecha-in {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+}
+
+.titulo-qa {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 80px;
+
+  color: #000000;
+}
+
+.prueba-scroll {
+  overflow: auto;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.prueba {
+  display: inline-block;
+}
 
 
 @media (min-width: 768px) {
