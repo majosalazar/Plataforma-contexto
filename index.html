@@ -18,11 +18,11 @@
 <body>
 
   <!-- inicio navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light navbar-contexto fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-contexto fixed-top">
     <a class="navbar-brand" href="index.html">
       <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -73,19 +73,24 @@
         </li>
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
+      <div class="buscar d-none d-md-block"> 
+        <input type="text" class="buscar_texto">
+        <a href="" class="boton">
+          <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+        </a>
+      </div>
+      <form class="form-inline my-2 my-lg-0 d-md-none">
         <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-        <div class="dropdown">
-          <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <a class="Icono " href="">
-            <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
-          </a>
-      </form>
+        <a class="Icono " href="">
+          <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+        </a>
+      </form>     
     </div>
   </nav>
+  <!-- 
+    <form class="form-inline my-2 my-lg-0">
+    <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <div class="dropdown">-->
   <!-- fin navbar -->
 
 
@@ -96,7 +101,7 @@
         <div class="col-md-6">
           <img src="img/isotipo.svg" alt="" class="isotipo">
           <p class="frase">Somos un espacio libre de propaganda política, que entrega información fidedigna,
-            traducuiendo contenido teórico complejo y abtracto a nuestro lenguaje y vida cotidiana</p>
+            traducuiendo contenido teórico complejo y abstracto a nuestro lenguaje y vida cotidiana</p>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -112,7 +117,7 @@
         <div class="col-12">
           <h1 class="titulo">Recursos</h1>
           <img src="/img/gestos/Vector.svg" class="gesto" alt="">
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+          <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
             labore et dolore magna aliqua.
           </p>
         </div>
@@ -125,8 +130,8 @@
               </div>
               <div class="col-9">
                 <div class="">
-                  <h3 class="titulo-card">Opinión experta</h3>
-                  <p class="">This is a wider card with supporting text below as a natural lead-in to additional
+                  <h3 class="titulo-card">Opinión expert</h3>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -143,7 +148,7 @@
               <div class="col-9">
                 <div class="">
                   <h3 class="titulo-card">Compara constituciones</h3>
-                  <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -151,7 +156,8 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+
+        <div class="col-md-6 d-none d-md-block">
           <div class="card-contexto w-100">
             <div class="row">
               <div class="col-3 alinear-v">
@@ -160,15 +166,14 @@
               <div class="col-9">
                 <div class="">
                   <h3 class="titulo-card">Opinión experta</h3>
-                  <p class="">This is a wider card with supporting text below as a natural lead-in to additional
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6">
+        <div class="col-md-6 d-none d-md-block">
           <div class="card-contexto w-100">
             <div class="row">
               <div class="col-3 alinear-v">
@@ -177,7 +182,7 @@
               <div class="col-9">
                 <div class="">
                   <h3 class="titulo-card">Compara constituciones</h3>
-                  <p class="texto">This is a wider card with supporting text below as a natural lead-in to additional
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -192,12 +197,12 @@
 
   <!-- inicio sección contexto factual -->
   <section class="container-fluid fondo-rojo pb-5">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
         <div class="col-12">
           <h1 class="titulo">Contexto factual</h1>
           <img src="/img/gestos/Vector.svg" class="gesto" alt="">
-          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+          <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
             labore et dolore magna aliqua.
           </p>
         </div>
@@ -235,7 +240,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
           <div class="card-img">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -246,7 +251,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
           <div class="card-img">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -257,7 +262,7 @@
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
           <div class="card-img">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -283,7 +288,7 @@
           <img src="/img/Iconos/icono qa-2.svg" class="gesto icono-qa" alt="">
           <h1 class="titulo">Preguntas y respuestas</h1>
           <img src="/img/gestos/Vector.svg" class="gesto" alt="">
-          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+          <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
             labore et dolore magna aliqua.
           </p>
         </div>
@@ -304,6 +309,7 @@
               </div>
 
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+
                 <div class="card-respuesta">
                   La Constitución nos afecta directa e indirectamente.
                   <br>
@@ -325,11 +331,13 @@
                   aria-controls="collapseTwo">
                   <button class="btn btn-pregunta collapsed" type="button">
                     ¿Qué es un Proceso Constituyente?
+
                   </button>
                   <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
                 <div class="card-respuesta">
                   Un proceso constituyente considera todas las fases asociadas a escribir una Constitución. Los procesos
                   constituyen suelen considerar una fase de competência electoral integrantes de una Asamblea o
@@ -351,6 +359,7 @@
                 </h2>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+
                 <div class="card-respuesta">
                   Habrá dos votos, en uno se pregunta: ¿Quiere ud. una nueva Constitución?
                   Con las opciones:
@@ -366,7 +375,6 @@
                   — Convención constitucional. Integrada exclusivamente por
                   miembros elegidos popularmente
 
-                  Voto
                 </div>
               </div>
             </div>
@@ -388,7 +396,7 @@
       <div class="col-md-12">
         <h1 class="titulo">Agenda</h1>
           <img src="/img/gestos/Vector.svg" class="gesto" alt="">
-          <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+          <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
             labore et dolore magna aliqua.
       </div>
 
