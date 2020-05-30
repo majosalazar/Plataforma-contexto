@@ -322,6 +322,16 @@ h3 {
   color: #000000;
 }
 
+.prueba-scroll {
+  overflow: auto;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.prueba {
+  display: inline-block;
+}
+
 
 @media (min-width: 768px) {
   .isotipo {
