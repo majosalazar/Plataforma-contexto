@@ -381,6 +381,12 @@ h3 {
   margin-right: auto;
 }
 
+.card-hover:hover {
+
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+
 
 @media (min-width: 768px) {
   .isotipo {
@@ -547,7 +553,7 @@ section .section-title {
 #footer ul.quick-links li:hover {
   padding: 3px 0;
   margin-left: 5px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #footer ul.quick-links li a i {
@@ -555,7 +561,7 @@ section .section-title {
 }
 
 #footer ul.quick-links li:hover a i {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media (max-width:767px) {
