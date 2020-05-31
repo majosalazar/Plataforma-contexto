@@ -22,9 +22,25 @@
   color: var(--negro);
   font-size: 14px;
   float: left;
-  line-height: 5px;
+  line-height: 40px;
   transition: .3s;
   width: 0;
+}
+
+/* compatible para navegadores */
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  line-height:40px;
+}
+::-webkit-input-placeholder { /* Webkit */
+  line-height:40px;
+}
+:-ms-input-placeholder { /* IE */
+  line-height:40px;
+}
+
+.dropdown-toggle::after {
+  margin-left: .5em !important;
+  vertical-align: 0.15em !important;
 }
 
 .boton {
@@ -33,6 +49,10 @@
   text-decoration: none;
   color: var(--negro);
   font-size: 14px;
+}
+
+.buscar-mobile{
+  background-color: var(--crema);
 }
 
 @media screen and (min-width:480px) {
@@ -185,6 +205,8 @@ p {
 
 .form-control-sm {
   background: var(--crema);
+  border: none;
+  line-height: 40px !important;
 }
 
 .card-contexto {
@@ -286,6 +308,13 @@ h3 {
   margin-top: 20px;
 }
 
+.btn-contexto-container{
+  margin-top: 4em;
+  display: flex;
+  position: relative;
+  left: -35px;
+}
+
 .btn-contexto {
   background: #FFFFFF;
   border: 3px solid #000000;
@@ -295,8 +324,8 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .flecha-gesto {
@@ -331,10 +360,14 @@ h3 {
   top: 70px;
 }
 
+.card-btn-container{
+  align-items: center;
+}
+
 .flecha-in {
-  position: absolute;
+  /* position: absolute;
   right: 30px;
-  bottom: 40px;
+  bottom: 40px; */
 }
 
 .titulo-qa {
@@ -359,6 +392,12 @@ h3 {
 .prueba {
   display: inline-block;
 }
+
+
+.collapse-chevron-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 .texto-blanco {
   color: var(--blanco);
@@ -385,6 +424,7 @@ h3 {
 
   transition: 0.5s;
   transform: scale(1.03);
+
 }
 
 

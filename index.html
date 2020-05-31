@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/chevron.css">
 </head>
 
 <body>
@@ -24,10 +26,12 @@
     <a class="navbar-brand" href="index.html">
       <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
     </a>
+    <!-- menu hamburguesa -->
     <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
+    <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,7 +50,17 @@
             <a class="dropdown-item" href="opinion.html">Opinión experta</a>
             <a class="dropdown-item" href="#">Compara constituciones</a>
             <a class="dropdown-item" href="#">Documentos descargables</a>
-            <a class="dropdown-item" href="#">Multimedia</a>
+            <!-- <a class="dropdown-item" href="#">Multimedia</a> -->
+            
+              <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown">Multimedia</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Videos</a>
+                <a class="dropdown-item" href="#">Podcast</a>
+                <a class="dropdown-item" href="#">Infografías</a>
+              </div>
+           
+              
+
             <!-- 
             <a class="dropdown-item" href="#">Videos</a>
             <a class="dropdown-item" href="#">Podcast</a>
@@ -83,10 +97,12 @@
         </a>
       </div>
       <form class="form-inline my-2 my-lg-0 d-md-none">
-        <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-        <a class="Icono " href="">
-          <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
-        </a>
+        <div class="buscar-mobile">
+          <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <a class="Icono " href="">
+            <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+          </a>
+        </div>
       </form>
     </div>
   </nav>
@@ -306,13 +322,16 @@
           <div class="accordion" id="accordionExample">
             <div class="">
               <div class="card-pregunta" id="headingOne">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                <h2 class="mb-0 collapse-chevron-wrap" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                   aria-controls="collapseOne">
-                  <button class="btn btn-pregunta" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                  <button class="btn btn-pregunta collapsed" type="button">
                     ¿Afecta la Constitución nuestras vidas?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div id="chevron_1" class="chevron chevron-1 chevron-start-down">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
 
@@ -341,12 +360,16 @@
             <br>
             <div class="">
               <div class="card-pregunta" id="headingTwo">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                <h2 class="mb-0 collapse-chevron-wrap" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                   aria-controls="collapseTwo">
                   <button class="btn btn-pregunta collapsed" type="button">
                     ¿Qué es un Proceso Constituyente?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div class="chevron chevron-1 chevron-start-down">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -366,12 +389,16 @@
             <br>
             <div class="">
               <div class="card-pregunta" id="headingThree">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                <h2 class="mb-0 collapse-chevron-wrap" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                   aria-controls="collapseThree">
                   <button class="btn btn-pregunta collapsed" type="button">
                     ¿Qué se preguntará en el plebiscito del 25 de octubre de 2020?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div class="chevron chevron-1 chevron-start-down">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
               <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -398,10 +425,11 @@
             </div>
           </div>
           <!-- fin preguntas -->
-          <div>
-            <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
-            <button class="btn-contexto">Ver más ...</button>
-
+          <div class="d-flex justify-content-center">
+            <div class="btn-contexto-container">
+              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+              <button class="btn-contexto">Ver más ...</button>
+            </div>
           </div>
         </div>
 
@@ -431,8 +459,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -446,8 +476,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -461,8 +493,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -476,8 +510,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -581,6 +617,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+  <script src="./app.js"></script>  
 </body>
 
 </html>
