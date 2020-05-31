@@ -308,6 +308,13 @@ h3 {
   margin-top: 20px;
 }
 
+.btn-contexto-container{
+  margin-top: 4em;
+  display: flex;
+  position: relative;
+  left: -35px;
+}
+
 .btn-contexto {
   background: #FFFFFF;
   border: 3px solid #000000;
@@ -317,8 +324,8 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .flecha-gesto {
@@ -353,10 +360,14 @@ h3 {
   top: 70px;
 }
 
+.card-btn-container{
+  align-items: center;
+}
+
 .flecha-in {
-  position: absolute;
+  /* position: absolute;
   right: 30px;
-  bottom: 40px;
+  bottom: 40px; */
 }
 
 .titulo-qa {
@@ -380,6 +391,12 @@ h3 {
 
 .prueba {
   display: inline-block;
+}
+
+.collapse-chevron-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 

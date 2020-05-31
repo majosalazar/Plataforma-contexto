@@ -1,0 +1,178 @@
+/* // SASS/SCSS Variables
+// Colours */
+
+:root{
+
+  --primaryColor: black;
+  --backgroundColor:var(--primaryColor);
+  --borderColor:var(--primaryColor);
+  /* // Dimensions */
+  --width: 2;
+ --borderRadius: 2;
+  --chevronMargin: 10;
+  /* // Angles */
+  --baseAngle: 40;
+}
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+hr {
+  margin: 20px auto;
+  border: solid 1px #DDDDDD;
+  width: 98%;
+}
+
+/* CHEVRONS */
+
+.chevron {
+  padding-top:20px;
+  margin-right: 20px;
+}
+
+.chevron {  
+  text-align:center;
+  padding: 0 10px;
+  width: auto;
+  display: inline-block;
+  border: none;  
+  
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  
+}
+
+.chevron span {
+  background-color: var(--backgroundColor);
+  border: solid 1.5px var(--borderColor);
+  display: block;
+  
+  height: 15px;
+  width: 2px; 
+  
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  
+}
+
+/* Chevron 1 */
+
+.chevron-1 span:nth-child(1) {
+  transform: rotate(40deg);
+}
+
+.chevron-1 span:nth-child(2) {
+  margin-top:(-2 * 3) + px;
+  transform: rotate(40deg);
+}
+
+.chevron-1.active span:nth-child(1) {
+  transform: rotate(-40deg);
+}
+
+.chevron-1.active span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+
+/* Down */
+
+.chevron-1.chevron-start-down span {
+  display:inline-block;
+  margin-right: -3px;
+  margin-left: 0px;
+}
+.chevron-1.chevron-start-down span:nth-child(1) {
+  transform: rotate(50deg);
+}
+.chevron-1.chevron-start-down span:nth-child(2) {
+  transform: rotate(-50deg);
+}
+.chevron-1.active.chevron-start-down span:nth-child(1) {
+  transform: rotate(-40deg);
+}
+.chevron-1.active.chevron-start-down span:nth-child(2) {
+  transform: rotate(40deg);
+}
+
+.chevron-1.chevron-start-up,
+.chevron-1.chevron-start-down {
+  width: auto;
+}
+
+/* Wobble - https://codepen.io/IanLunn/pen/hysxc */
+/* Wobble Horizontal */
+@keyframes wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+    transform: translateX(-6px);
+  }
+  49.95% {
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.wobble-horizontal {
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+}
+.wobble-horizontal:hover {
+  animation-name: wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+/* Wobble Vertical */
+@keyframes wobble-vertical {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-6px);
+  }
+  49.95% {
+    transform: translateY(4px);
+  }
+  66.6% {
+    transform: translateY(-2px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+a:hover .chevron {
+  animation-name: wobble-horizontal;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;  
+}
+a:hover .chevron.chevron-start-up, 
+a:hover .chevron.chevron-start-down {
+  animation-name: wobble-vertical;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;  
+}
+

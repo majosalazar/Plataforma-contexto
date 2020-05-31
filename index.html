@@ -14,6 +14,7 @@
   <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/chevron.css">
 </head>
 
 <body>
@@ -317,13 +318,17 @@
           <div class="accordion" id="accordionExample">
             <div class="">
               <div class="card-pregunta" id="headingOne">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                <h2 class="mb-0 collapse-chevron-wrap" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
                   aria-controls="collapseOne">
                   <button class="btn btn-pregunta" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                    aria-expanded="false" aria-controls="collapseOne">
                     ¿Afecta la Constitución nuestras vidas?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div class="chevron chevron-1 chevron-start-down">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
 
@@ -406,10 +411,11 @@
             </div>
           </div>
           <!-- fin preguntas -->
-          <div>
-            <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
-            <button class="btn-contexto">Ver más ...</button>
-
+          <div class="d-flex justify-content-center">
+            <div class="btn-contexto-container">
+              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+              <button class="btn-contexto">Ver más ...</button>
+            </div>
           </div>
         </div>
 
@@ -439,8 +445,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -454,8 +462,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -469,8 +479,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
@@ -484,8 +496,10 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
