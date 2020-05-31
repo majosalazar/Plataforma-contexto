@@ -65,20 +65,20 @@ hr {
 /* Chevron 1 */
 
 .chevron-1 span:nth-child(1) {
-  transform: rotate(40deg);
-}
-
-.chevron-1 span:nth-child(2) {
-  margin-top:(-2 * 3) + px;
-  transform: rotate(40deg);
-}
-
-.chevron-1.active span:nth-child(1) {
   transform: rotate(-40deg);
 }
 
+.chevron-1 span:nth-child(2) {
+  margin-top:-5px;
+  transform: rotate(-40deg);
+}
+
+.chevron-1.active span:nth-child(1) {
+  transform: rotate(40deg);
+}
+
 .chevron-1.active span:nth-child(2) {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 
@@ -90,16 +90,16 @@ hr {
   margin-left: 0px;
 }
 .chevron-1.chevron-start-down span:nth-child(1) {
-  transform: rotate(50deg);
-}
-.chevron-1.chevron-start-down span:nth-child(2) {
   transform: rotate(-50deg);
 }
+.chevron-1.chevron-start-down span:nth-child(2) {
+  transform: rotate(50deg);
+}
 .chevron-1.active.chevron-start-down span:nth-child(1) {
-  transform: rotate(-40deg);
+  transform: rotate(40deg);
 }
 .chevron-1.active.chevron-start-down span:nth-child(2) {
-  transform: rotate(40deg);
+  transform: rotate(-40deg);
 }
 
 .chevron-1.chevron-start-up,
@@ -176,3 +176,32 @@ a:hover .chevron.chevron-start-down {
   animation-iteration-count: 1;  
 }
 
+@media (max-width: 768px) {
+  .chevron{
+    margin-right: 28px;
+    padding-top: 12px !important;
+  }
+
+  .collapse-chevron-wrap{
+    align-items: baseline;
+  }
+
+  .chevron-1.chevron-start-down span {
+    display: inline-block;
+    margin-right: -20px;
+    margin-left: 0px;
+}
+  .chevron-1.chevron-start-down span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .chevron-1.chevron-start-down span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  .chevron-1.active.chevron-start-down span:nth-child(1) {
+    transform: rotate(-40deg);
+  }
+
+  .chevron-1.active.chevron-start-down span:nth-child(2) {
+    transform: rotate(40deg);
+  }
+}

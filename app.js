@@ -3,6 +3,7 @@ $('.menu-hamb').click(function(){
 })
 
 jQuery(document).ready( function() {
+  $('#chevron_1').addClass("active");
   jQuery('.chevron').on("click", function(e) {
     e.preventDefault();
     $(this).toggleClass("active");
