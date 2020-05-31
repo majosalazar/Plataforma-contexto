@@ -364,11 +364,7 @@ h3 {
   align-items: center;
 }
 
-.flecha-in {
-  /* position: absolute;
-  right: 30px;
-  bottom: 40px; */
-}
+
 
 .titulo-qa {
   font-family: Space Grotesk;
@@ -383,21 +379,11 @@ h3 {
   color: #000000;
 }
 
-.prueba-scroll {
-  overflow: auto;
-  white-space: nowrap;
-  display: inline-block;
-}
-
-.prueba {
-  display: inline-block;
-}
-
-
 .collapse-chevron-wrap{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
 .texto-blanco {
   color: var(--blanco);
