@@ -336,7 +336,7 @@ h3 {
 .btn-contexto:hover {
   background-color: #000000;
   color: white;
-  
+
 }
 
 
@@ -423,6 +423,17 @@ h3 {
   transition: 0.5s;
   transform: scale(1.03);
 }
+
+.breadcrumbs {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  color: var(--negro);
+}
+
 
 
 @media (min-width: 768px) {
