@@ -11,8 +11,12 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- css link -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/chevron.css">
 </head>
 
 <body>
@@ -22,10 +26,12 @@
     <a class="navbar-brand" href="index.html">
       <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
     </a>
+    <!-- menu hamburguesa -->
     <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
+    <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,7 +50,17 @@
             <a class="dropdown-item" href="opinion.html">Opinión experta</a>
             <a class="dropdown-item" href="#">Compara constituciones</a>
             <a class="dropdown-item" href="#">Documentos descargables</a>
-            <a class="dropdown-item" href="#">Multimedia</a>
+            <!-- <a class="dropdown-item" href="#">Multimedia</a> -->
+            
+              <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown">Multimedia</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Videos</a>
+                <a class="dropdown-item" href="#">Podcast</a>
+                <a class="dropdown-item" href="#">Infografías</a>
+              </div>
+           
+              
+
             <!-- 
             <a class="dropdown-item" href="#">Videos</a>
             <a class="dropdown-item" href="#">Podcast</a>
@@ -81,10 +97,12 @@
         </a>
       </div>
       <form class="form-inline my-2 my-lg-0 d-md-none">
-        <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-        <a class="Icono " href="">
-          <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
-        </a>
+        <div class="buscar-mobile">
+          <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <a class="Icono " href="">
+            <img src="/img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+          </a>
+        </div>
       </form>
     </div>
   </nav>
@@ -102,7 +120,7 @@
         <div class="col-md-6">
           <img src="img/isotipo.svg" alt="" class="isotipo">
           <p class="frase">Somos un espacio libre de propaganda política, que entrega información fidedigna,
-            traducuiendo contenido teórico complejo y abstracto a nuestro lenguaje y vida cotidiana</p>
+            traduciendo contenido teórico complejo y abstracto a nuestro lenguaje y vida cotidiana</p>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -122,18 +140,18 @@
             labore et dolore magna aliqua.
           </p>
         </div>
-        
+
         <div class="col-md-6">
-          <div class="card-contexto w-100">
+          <div class="card-contexto w-100 card-hover">
             <div class="row">
               <div class="col-3 alinear-v">
                 <img src="img/Iconos/Vector.svg" class="icono-card mx-4 my-4" alt="...">
               </div>
               <div class="col-9">
                 <div class="">
-
                   <h3 class="titulo-card">Opinión experta</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
                 </div>
               </div>
             </div>
@@ -141,7 +159,7 @@
         </div>
 
         <div class="col-md-6">
-          <div class="card-contexto w-100">
+          <div class="card-contexto w-100 card-hover">
             <div class="row">
               <div class="col-3 alinear-v">
                 <img src="img/Gestos/Compara- sinFondo.svg" class="icono-card mx-3 my-3" alt="...">
@@ -160,22 +178,23 @@
 
 
         <div class="col-md-6 d-none d-md-block">
-          <div class="card-contexto w-100">
+          <div class="card-contexto w-100 card-hover">
             <div class="row">
               <div class="col-3 alinear-v">
                 <img src="img/Gestos/Descarga - sinFondo.svg" class="icono-card mx-4 my-3" alt="...">
               </div>
               <div class="col-9">
-                <div class=""
+                <div class="">
                   <h3 class="titulo-card">Documentos</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 d-none d-md-block">
-          <div class="card-contexto w-100">
+          <div class="card-contexto w-100 card-hover">
             <div class="row">
               <div class="col-3 alinear-v">
                 <img src="img/Iconos/multimedia.svg" class="icono-card mx-4 my-3" alt="...">
@@ -184,7 +203,8 @@
                 <div class="">
 
                   <h3 class="titulo-card">Multimedia</h3>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
                     content. This content is a little bit longer.</p>
                 </div>
               </div>
@@ -210,7 +230,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -221,7 +241,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -232,7 +252,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -243,7 +263,7 @@
         </div>
 
         <div class="col-md-4 d-none d-md-block">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -254,7 +274,7 @@
         </div>
 
         <div class="col-md-4 d-none d-md-block">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -265,7 +285,7 @@
         </div>
 
         <div class="col-md-4 d-none d-md-block">
-          <div class="card-img">
+          <div class="card-img card-hover">
             <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="titulo-card">Card title</h5>
@@ -274,6 +294,16 @@
             </div>
           </div>
         </div>
+
+        <div class="col-md-12">
+          <div class="d-flex justify-content-center">
+            <div class="btn-contexto-container">
+              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+              <button class="btn-contexto">Ver más ...</button>
+            </div>
+          </div>
+        </div>
+
 
 
       </div>
@@ -302,17 +332,20 @@
           <div class="accordion" id="accordionExample">
             <div class="">
               <div class="card-pregunta" id="headingOne">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
-                  <button class="btn btn-pregunta" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+                <h2 class="mb-0 collapse-chevron-wrap">
+                  <button class="btn btn-pregunta collapsed" type="button">
                     ¿Afecta la Constitución nuestras vidas?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div id="chevron_1" class="chevron chevron-1 chevron-start-down" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
 
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="collapseOne" class="collapse show">
 
                 <div class="card-respuesta">
                   <p>La Constitución nos afecta directa e indirectamente.
@@ -327,29 +360,37 @@
                     sociedad.
                     <br>
                     <br>
-                    <b>Indirectamente</b>, porque cualquier ley o reglamento debe ser consistente con la Constitución. Por lo
+                    <b>Indirectamente</b>, porque cualquier ley o reglamento debe ser consistente con la Constitución.
+                    Por lo
                     tanto, toda ley debe responder a los principios establecidos en una Constitución.
                   </p>
                 </div>
               </div>
             </div>
             <br>
+            
             <div class="">
               <div class="card-pregunta" id="headingTwo">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                  aria-controls="collapseTwo">
+                <h2 class="mb-0 collapse-chevron-wrap">
                   <button class="btn btn-pregunta collapsed" type="button">
                     ¿Qué es un Proceso Constituyente?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div class="chevron chevron-1 chevron-start-down" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div id="collapseTwo" class="collapse">
                 <div class="card-respuesta">
                   <p>
-                    Un proceso constituyente considera todas las fases asociadas a escribir una Constitución. Los procesos
+                    Un proceso constituyente considera todas las fases asociadas a escribir una Constitución. Los
+                    procesos
                     constituyen suelen considerar una fase de competência electoral integrantes de una Asamblea o
-                    Convención que redactará la nueva Constitución; una fase deliberativa de la Convención que implica el
+                    Convención que redactará la nueva Constitución; una fase deliberativa de la Convención que implica
+                    el
                     processo de escribir una nueva Carta Constitucional; y una fase resolutiva final que implica que la
                     ciudadanía se pronuncie sobre el texto propuesto.
                   </p>
@@ -357,17 +398,22 @@
               </div>
             </div>
             <br>
+
             <div class="">
               <div class="card-pregunta" id="headingThree">
-                <h2 class="mb-0" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                  aria-controls="collapseThree">
-                  <button class="btn btn-pregunta collapsed" type="button">
+                <h2 class="mb-0 collapse-chevron-wrap">
+                  <button class="btn btn-pregunta collapsed">
                     ¿Qué se preguntará en el plebiscito del 25 de octubre de 2020?
                   </button>
-                  <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt="">
+                  <div class="chevron chevron-1 chevron-start-down" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
                 </h2>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div id="collapseThree" class="collapse">
                 <div class="card-respuesta">
                   <p>
                     Habrá dos votos, en uno se pregunta: ¿Quiere ud. una nueva Constitución?
@@ -391,10 +437,11 @@
             </div>
           </div>
           <!-- fin preguntas -->
-          <div>
-            <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
-            <button class="btn-contexto">Ver más ...</button>
-
+          <div class="d-flex justify-content-center">
+            <div class="btn-contexto-container">
+              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+              <button class="btn-contexto">Ver más ...</button>
+            </div>
           </div>
         </div>
 
@@ -414,8 +461,8 @@
             labore et dolore magna aliqua.
         </div>
 
-        <div class="row prueba-scroll">
-          <div class="col-md-4 prueba">
+        <div class="row">
+          <div class="col-md-4 card-hover">
             <div class="card-img">
               <div class="fecha">
                 <p class="fecha-dia">20</p>
@@ -424,28 +471,15 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
-  
-          <div class="col-md-4 prueba">
-            <div class="card-img">
-              <div class="fecha">
-                <p class="fecha-dia">20</p>
-                <p class="fecha-mes">SEPT</p>
-              </div>
-              <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="titulo-card">Nombre de la activida</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-md-4 prueba">
+
+          <div class="col-md-4 card-hover">
             <div class="card-img">
               <div class="fecha">
                 <p class="fecha-dia">20</p>
@@ -454,13 +488,15 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
               </div>
             </div>
           </div>
-  
-          <div class="col-md-4 prueba">
+
+          <div class="col-md-4 card-hover">
             <div class="card-img">
               <div class="fecha">
                 <p class="fecha-dia">20</p>
@@ -469,8 +505,19 @@
               <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="titulo-card">Nombre de la actividad</h5>
-                <p class="">Ver actividad</p>
-                <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                <div class="d-flex justify-content-end card-btn-container">
+                  <p class="mb-0 mr-2">Ver actividad</p>
+                  <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="d-flex justify-content-center">
+              <div class="btn-contexto-container">
+                <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+                <button class="btn-contexto">Ver más ...</button>
               </div>
             </div>
           </div>
@@ -484,160 +531,84 @@
   <!-- fin agenda -->
 
 
-  <!-- Footer -->
-  <section>
-    <div class="row">
-      <div class="col 12">
-        <!-- Footer -->
-        <footer class="fondo-negro">
+  <!-- Inicio footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
 
-          <div class="fondo-negro">
-            <div class="container">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/Gestos/Logo-blanco.svg" class="logo" alt="logo plataforma contexto">
+          </a>
+          <br>
+          <p class="texto-blanco mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
 
-              <!-- Grid row-->
-              <div class="row py-4 d-flex align-items-center">
+        <div class="col-md-3">
+          <h5 class="mt-2">Participan:</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="#">Universidad Diego Portales</a></li>
+            <li><a href="#">Espacio Público</a></li>
+            <li><a href="#">Corporación Humanas</a></li>
+            <li><a href="#">Observatorio Cuidadano</a>
+            </li>
+          </ul>
+        </div>
 
-                <!-- Grid column -->
-                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                  <a class="navbar-brand" href="index.html">
-                    <img src="img/Gestos/Logo-blanco.svg" class="logo" alt="logo plataforma contexto">
-                  </a>
-                </div>
-                <!-- Grid column -->
+        <div class="col-md-3">
+          <h5>Mapa del sitio:</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Recursos</a></li>
+            <li><a href="#">Contexto factual</a>
+            </li>
+            <li><a href="">Preguntas y respuestas</a></li>
+            <li><a href="">Agenda</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
 
-                <!-- Grid column -->
-                <div class="col-md-6 col-lg-7 text-center text-md-right">
+        <div class="col-md-3">
+          <h5>Suscribete a nuestro newsletter</h5>
+          <p class="texto-blanco">A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
 
-                  <!-- Facebook -->
-                  <a class="fb-ic">
-                    <i class="fab fa-facebook-f white-text mr-4"> </i>
-                  </a>
-                  <!-- Twitter -->
-                  <a class="tw-ic">
-                    <i class="fab fa-twitter white-text mr-4"> </i>
-                  </a>
-                  <!-- Google +-->
-                  <a class="gplus-ic">
-                    <i class="fab fa-google-plus-g white-text mr-4"> </i>
-                  </a>
-                  <!--Linkedin -->
-                  <a class="li-ic">
-                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
-                  </a>
-                  <!--Instagram-->
-                  <a class="ins-ic">
-                    <i class="fab fa-instagram white-text"> </i>
-                  </a>
-
-                </div>
-                <!-- Grid column -->
-
-              </div>
-              <!-- Grid row-->
-
-            </div>
+          <div class="input-group mb-3 caja">
+            <input type="text" class="borde-contexto caja-correo" placeholder="Ingresa tu correo" aria-label="Ingresa tu correo" aria-describedby="basic-addon2">
+            <button class="borde-contexto" type="button">Enviar</button>
+            
           </div>
-
-          <!-- Footer Links -->
-          <div class="container text-center text-md-left mt-5">
-
-            <!-- Grid row -->
-            <div class="row mt-3">
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-                <!-- Content -->
-                <h3 class="titulo-footer">Creado por</h3>
-                <hr class="fondo-crema accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <a href="">
-                  <img src="https://www.udp.cl/wp-content/themes/thelight-starter/img/logo-blanco.png" class="logos-footer" alt="">
-                </a>
-
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <!-- Links -->
-                <h3 class="titulo-card">Mapa del sitio</h3>
-                <hr class="fondo-negro accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                  <a href="#!">Inicio</a>
-                </p>
-                <p>
-                  <a href="#!">Quiénes somos</a>
-                </p>
-                <p>
-                  <a href="#!">Recursos</a>
-                </p>
-                <p>
-                  <a href="#!">Contexto Factual</a>
-                </p>
-                <p>
-                  <a href="#!">Preguntas y respuestas</a>
-                </p>
-                <p>
-                  <a href="#!">Agenda</a>
-                </p>
-                <p>
-                  <a href="#!"></a>
-                </p>
-
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-                <!-- Links -->
-                <h3 class="titulo-card">Useful links</h3>
-                <hr class="fondo-negro accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                  <a href="#!">Espacio Público</a>
-                </p>
-                <p>
-                  <a href="#!">Universidad Diego Portales</a>
-                </p>
-              </div>
-              <!-- Grid column -->
-
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-
-                <!-- Links -->
-                <h3 class="titulo-card">Contacto</h3>
-                <hr class="fondo-amarillo accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                  <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p>
-                  <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p>
-                  <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p>
-                  <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-
-              </div>
-              <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-          </div>
-          <!-- Footer Links -->
-
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">
-            <a href="..."> Plataforma Contexto</a>
-          </div>
-          <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
+      
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="#"><i
+                  class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#"><i
+                  class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i
+                  class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i
+                  class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        <br>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p class="texto-blanco">Todos los derechos reservados © Plataforma Contexto 2020.</p>
+        </div>
       </div>
     </div>
   </section>
+  <!-- ./Footer -->
+
+
 
 
   <!-- bootstrap script -->
@@ -650,6 +621,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+  <script src="./app.js"></script>  
 </body>
 
 </html>

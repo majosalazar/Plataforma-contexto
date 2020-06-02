@@ -1,0 +1,63 @@
+
+:root{
+  --white: #FFF ;
+  --grasy: #F1F1F1;
+}
+
+.menu-hamb {
+	position: relative;
+	display:  block;
+	width: 40px;
+	height: 30px;
+	margin: 10px auto;
+}
+.menu-hamb span {
+	margin: 0 auto;
+	position: relative;
+	top: 12px;
+}
+.menu-hamb span:before, .menu-hamb span:after {
+	position: absolute;
+	content: '';
+}
+.menu-hamb span, .menu-hamb span:before, .menu-hamb span:after {
+	width: 40px;
+	height: 4px;
+	background-color: var(--gray);
+	display: block;
+	border-radius: 4px;
+}
+.menu-hamb span:before {
+	margin: -12px 0 0 0;
+}
+.menu-hamb span:after {
+	margin: 12px 0 0 0;
+}
+.collapse-hamb-hamb span {
+	transition-duration: 0s;
+	transition-delay: .2s;
+}
+.collapse-hamb.open span {
+	background-color: rgba(256,256,256,0.0);
+	transition-delay: .2s;
+}
+.collapse-hamb span:before {
+	transition-property: margin, transform;
+	transition-duration: .2s;
+	transition-delay: .2s, 0;
+}
+.collapse-hamb.open span:before {
+	margin-top: 0;
+	transform: rotate(45deg);
+	transition-delay: 0, .2s;
+}
+.collapse-hamb span:after {
+  transition-property: margin, transform;
+	transition-duration: .2s;
+	transition-delay: .2s, 0;
+}
+.collapse-hamb.open span:after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+	transition-delay: 0, .2s;
+}

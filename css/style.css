@@ -22,9 +22,30 @@
   color: var(--negro);
   font-size: 14px;
   float: left;
-  line-height: 5px;
+  line-height: 40px;
   transition: .3s;
   width: 0;
+}
+
+/* compatible para navegadores */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  line-height: 40px;
+}
+
+::-webkit-input-placeholder {
+  /* Webkit */
+  line-height: 40px;
+}
+
+:-ms-input-placeholder {
+  /* IE */
+  line-height: 40px;
+}
+
+.dropdown-toggle::after {
+  margin-left: .5em !important;
+  vertical-align: 0.15em !important;
 }
 
 .boton {
@@ -33,6 +54,10 @@
   text-decoration: none;
   color: var(--negro);
   font-size: 14px;
+}
+
+.buscar-mobile {
+  background-color: var(--crema);
 }
 
 @media screen and (min-width:480px) {
@@ -75,7 +100,7 @@ p {
 .logos-footer {
   width: 60%;
   margin-left: auto;
-  
+
 }
 
 
@@ -185,6 +210,8 @@ p {
 
 .form-control-sm {
   background: var(--crema);
+  border: none;
+  line-height: 40px !important;
 }
 
 .card-contexto {
@@ -286,6 +313,13 @@ h3 {
   margin-top: 20px;
 }
 
+.btn-contexto-container {
+  margin-top: 4em;
+  display: flex;
+  position: relative;
+  left: -35px;
+}
+
 .btn-contexto {
   background: #FFFFFF;
   border: 3px solid #000000;
@@ -295,12 +329,20 @@ h3 {
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
+.btn-contexto:hover {
+  background-color: #000000;
+  color: white;
+
+}
+
+
 .flecha-gesto {
-  width: 100px;
+  width: 130px;
+  padding-right: 30px;
 }
 
 .fecha {
@@ -331,11 +373,11 @@ h3 {
   top: 70px;
 }
 
-.flecha-in {
-  position: absolute;
-  right: 30px;
-  bottom: 40px;
+.card-btn-container {
+  align-items: center;
 }
+
+
 
 .titulo-qa {
   font-family: Space Grotesk;
@@ -350,15 +392,48 @@ h3 {
   color: #000000;
 }
 
-.prueba-scroll {
-  overflow: auto;
-  white-space: nowrap;
-  display: inline-block;
+.collapse-chevron-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.prueba {
-  display: inline-block;
+.texto-blanco {
+  color: var(--blanco);
+  font-size: 15px;
 }
+
+.borde-contexto {
+  background-color: white;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.caja-correo {
+  width: 180px;
+}
+
+.caja {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-hover:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+
+.breadcrumbs {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  color: var(--negro);
+}
+
 
 
 @media (min-width: 768px) {
@@ -452,4 +527,96 @@ h3 {
   src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf);
   src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf);
   src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf);
+}
+
+
+
+
+/*footer*/
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: var(--negro);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#footer {
+  background: var(--negro) !important;
+}
+
+#footer h5 {
+  padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+  padding: 3px 0;
+}
+
+#footer ul.social li a i {
+  margin-right: 5px;
+  font-size: 25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+  color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+  color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+  padding: 3px 0;
+  margin-left: 5px;
+  font-weight: 600;
+}
+
+#footer ul.quick-links li a i {
+  margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+  font-weight: 600;
+}
+
+@media (max-width:767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
 }
