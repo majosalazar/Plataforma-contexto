@@ -449,7 +449,8 @@ h3 {
 .breadcrumb-item+.breadcrumb-item::before {
   display: inline-block;
   padding-right: .5rem;
-  color: var(--negro) content: ">";
+  color: var(--negro); 
+  content: ">";
 }
 
 .tag {
