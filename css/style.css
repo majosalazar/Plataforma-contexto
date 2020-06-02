@@ -76,7 +76,7 @@
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
 
   color: #000000;
@@ -135,6 +135,20 @@ p {
   background-color: var(--amarillo);
 }
 
+.fondo-construccion {
+  background-color: var(--amarillo);
+  height: 100vh;
+}
+
+.img-construccion {
+  width: 150px;
+}
+
+.logo-construccion {
+  height: 70px;
+  width: 250px;
+}
+
 .isotipo {
   display: block;
   margin-right: auto;
@@ -183,8 +197,7 @@ p {
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   letter-spacing: 0.44px;
@@ -457,6 +470,11 @@ h3 {
     line-height: 48px;
   }
 
+  .fondo-construccion {
+    background-color: var(--amarillo);
+    height: 100vh;
+
+  }
 
   .gesto {
     display: block;
@@ -509,6 +527,14 @@ h3 {
 
   .titulo-card {
     font-size: 22px;
+  }
+
+  .img-construccion {
+    width: 200px;
+    margin-right: 100pxs;
+    margin-left: 100px;
+    margin-top: 7em;
+    margin-bottom: 5em
   }
 
 }
