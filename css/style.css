@@ -187,7 +187,6 @@ p {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 48px;
   text-align: left;
 
   color: #000000;
@@ -269,6 +268,12 @@ h3 {
 .alinear-v {
   display: table-cell;
   vertical-align: middle;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 19px;
+
 }
 
 .card-body {
@@ -441,10 +446,50 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 1rem;
+  padding-top: 2rem;
   margin-bottom: 1rem;
   list-style: none;
+}
+
+.color-texto {
   color: var(--negro);
+}
+
+.color-texto:hover {
+  color: white;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: .5rem;
+  color: var(--negro); 
+  content: ">";
+}
+
+.tag {
+  color: var(--negro);
+  background-color: var(--crema);
+  border-color: var(--negro);
+  padding: .25rem .5rem;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center
+}
+
+.icono-rrss {
+  font-size: 24px;
+  color: var(--negro);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.icono-rrss:hover {
+  transition: 0.5s;
+  transform: scale(1.03);
+}
+
+.icono-tiempo {
+  width: 24px;
 }
 
 

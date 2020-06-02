@@ -28,10 +28,10 @@
     </a>
     <!-- menu hamburguesa -->
     <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse"
-    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-    aria-label="Toggle navigation">
-    <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
-    <!-- <span class="navbar-toggler-icon"></span> -->
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
+      <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,15 +51,15 @@
             <a class="dropdown-item" href="#">Compara constituciones</a>
             <a class="dropdown-item" href="#">Documentos descargables</a>
             <!-- <a class="dropdown-item" href="#">Multimedia</a> -->
-            
-              <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown">Multimedia</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Videos</a>
-                <a class="dropdown-item" href="#">Podcast</a>
-                <a class="dropdown-item" href="#">Infografías</a>
-              </div>
-           
-              
+
+            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-toggle="dropdown">Multimedia</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Videos</a>
+              <a class="dropdown-item" href="#">Podcast</a>
+              <a class="dropdown-item" href="#">Infografías</a>
+            </div>
+
+
 
             <!-- 
             <a class="dropdown-item" href="#">Videos</a>
@@ -106,12 +106,11 @@
       </form>
     </div>
   </nav>
- 
-  <!-- fin navbar -->
-  
-  <!-- inicio sección color -->
-  <section class="container-fluid fondo-azul pb-3">
 
+  <!-- fin navbar -->
+
+  <!-- inicio sección color -->
+  <section class="container-fluid fondo-crema pb-3">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -120,15 +119,23 @@
             <ol class="breadcrumbs">
               <li class="breadcrumb-item"><a class="color-texto" href="#">Inicio</a></li>
               <li class="breadcrumb-item"><a class="color-texto" href="#">Recursos</a></li>
-              <li class="breadcrumb-item" aria-current="page">Opinión experta</li>
+              <li class="breadcrumb-item"><a class="color-texto" href="#">Opinión experta</a></li>
+              <li class="breadcrumb-item" aria-current="page">Nombre del informe</li>
             </ol>
           </nav>
 
-          <h1 class="titulo">Opinión experta</h1>
-          <img src="/img/gestos/Vector.svg" class="gesto" alt="">
-          <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
-            labore et dolore magna aliqua.
-          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="/img/img/prueba-card.png" class="w-100 mt-5" alt="">
+            </div>
+            <div class="col-md-8">
+              <h1 class="titulo">Nombre del informe</h1>
+              <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
+                labore et dolore magna aliqua.
+              </p>
+
+            </div>
+          </div>
         </div>
 
         <div class="col-md-12 pt-5">
@@ -148,118 +155,36 @@
   <!-- inicio sección cards -->
   <section class="container">
     <div class="row">
+      <div class="col-md-4 fondo-crema p-5">
+        <h5 class="titulo-card">Nombre del informe</h5>
+        <p class="card-text">Autor(es): Nombre Some quick example</p>
+        <div class="d-flex justify-content-star">
+          <p class="mb-0 mr-2">5'</p>
+          <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+        </div>
 
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+      </div>
+          
+      <div class="col-md-8 p-4">
+        <p class=""><b>Resumen:</b>  
+          En este informe se analiza el derecho a Consulta Previa Indígena que es garantizado por el Estado de Chile a los pueblos indígenas a través del Convenio 169 de la OIT y las Declaraciones ONU y OEA para pueblos indígenas. Se estudian las similitudes y diferencias entre los distintos articulados, destacando sus falencias, omisiones y también, elementos positivos. Además, se revisan las propuestas nacionales de Consulta Previa Indígena que han regulado este derecho colectivo desde 2009 –Decreto Supremo 124- hasta la actualidad –Decretos Supremos 66 y 40. Por último, se evalúa la pertinencia del consentimiento indígena como vinculante para el emprendimiento conjunto de medidas administrativas y legislativas al interior del territorio.</p>
+          <p><b>Palabras clave:</b></p>
+          <button type="button" class="tag">Small button</button>
+          <button type="button" class="tag">Small button</button>
+          <button type="button" class="tag">Small button</button>
+          <button type="button" class="tag">Small button</button>
+          
+          <div class="d-flex justify-content-center">
+            <div class="btn-contexto-container">
+              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
+              <button class="btn-contexto">Ver más ...</button>
             </div>
           </div>
-        </div>
       </div>
-
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 d-none d-md-block">
-        <div class="card-img card-hover">
-          <img src="/img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="/img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Ver más</p>
-              <img src="/img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     </div>
   </section>
+
 
   <!-- Inicio footer -->
   <section id="footer">
@@ -304,26 +229,23 @@
           <p class="texto-blanco">A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
 
           <div class="input-group mb-3 caja">
-            <input type="text" class="borde-contexto caja-correo" placeholder="Ingresa tu correo" aria-label="Ingresa tu correo" aria-describedby="basic-addon2">
+            <input type="text" class="borde-contexto caja-correo" placeholder="Ingresa tu correo"
+              aria-label="Ingresa tu correo" aria-describedby="basic-addon2">
             <button class="borde-contexto" type="button">Enviar</button>
-            
+
           </div>
-      
+
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
           <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
             </li>
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-google-plus"></i></a></li>
-            <li class="list-inline-item"><a href="#" target="_blank"><i
-                  class="fa fa-envelope"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
         <br>
@@ -351,7 +273,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-  <script src="./app.js"></script>  
+  <script src="./app.js"></script>
 </body>
 
 </html>
