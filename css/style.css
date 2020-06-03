@@ -479,6 +479,10 @@ h3 {
   width: 24px;
 }
 
+.btn-descargar {
+  width: 30px;
+}
+
 
 @media (min-width: 768px) {
   .isotipo {
