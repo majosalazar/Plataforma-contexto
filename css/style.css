@@ -504,8 +504,6 @@ h3 {
 }
 
 .btn-qa {
-  display: inline-block;
-  vertical-align: middle;
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
@@ -513,10 +511,8 @@ h3 {
   line-height: 22px;
   color: var(--negro);
   padding: 10px 20px;
-  margin-bottom: 10px;
   border: 3px solid #000000;
   background-color: var(--crema);
-
 }
 
 .btn-qa:hover {
@@ -532,6 +528,15 @@ a:hover {
   background-color: var(--negro);
   color: var(--blanco);
 
+}
+
+@media (max-width: 768px) {
+  .bloque {
+    display: flex;
+    
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
 }
 
 
@@ -625,6 +630,9 @@ a:hover {
 
   .btn-qa {
     border: 5px solid #000000;
+    margin-bottom: 10px;
+    display: inline-block;   
+    
   }
 
 }
