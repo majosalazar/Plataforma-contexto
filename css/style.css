@@ -503,6 +503,42 @@ h3 {
   font-size: 28px;
 }
 
+.btn-qa {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--negro);
+  padding: 10px 20px;
+  border: 3px solid #000000;
+  background-color: var(--crema);
+}
+
+.btn-qa:hover {
+  color: var(--blanco);
+  background-color: var(--negro);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bloque a[aria-expanded="true"] {
+  background-color: var(--negro);
+  color: var(--blanco);
+
+}
+
+@media (max-width: 768px) {
+  .bloque {
+    display: flex;
+    
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+
 
 @media (min-width: 768px) {
   .isotipo {
@@ -590,6 +626,13 @@ h3 {
     margin-left: 100px;
     margin-top: 7em;
     margin-bottom: 5em
+  }
+
+  .btn-qa {
+    border: 5px solid #000000;
+    margin-bottom: 10px;
+    display: inline-block;   
+    
   }
 
 }
@@ -701,7 +744,3 @@ section .section-title {
     margin-bottom: 10px;
   }
 }
-
-
-
-
