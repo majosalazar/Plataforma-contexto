@@ -19,7 +19,7 @@
 
 }
 
-h2{
+h2 {
     font-family: Space Grotesk;
     font-style: normal;
     font-size: 42px;
@@ -79,31 +79,38 @@ h2{
 
 }
 
-.factCard-body{
+.factCard-body {
     border: 4px;
     border-color: var(--blanco);
     border-style: solid;
 }
 
-.factCard-title{
+.factCard-title {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     text-align: left;
-    color:var(--blanco);
+    color: var(--blanco);
 }
 
-.factCard-text{
+.factCard-img {
+    background: #FFFFFF;
+    border: 4px solid #FFFFFF;
+    margin-bottom: 25px;
+    width: 100%
+}
+
+.factCard-text {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     text-align: left;
-    color:var(--blanco);
+    color: var(--blanco);
 }
 
-.reviewFact{
- text-align: right;
- width: 500;
+.reviewFact {
+    text-align: right;
+    width: 500;
 }
