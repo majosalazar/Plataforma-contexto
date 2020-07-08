@@ -5,4 +5,77 @@
     --crema: #F1F1F1;
     --blanco: #ffffff;
     --negro: #000000;
-  }
+}
+
+.titulo-factual {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: var(--blanco);
+
+}
+
+h2{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: var(--blanco);
+}
+
+.breadcrumbs-factual {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.color-texto-factual {
+    color: var(--blanco)
+}
+
+.color-texto-factual:hover {
+    color: var(--amarillo);
+}
+
+.breadcrumb-itemFact+.breadcrumb-itemFact::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: var(--blanco);
+    content: " > ";
+}
+
+.resumenFact {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    color: var(--blanco);
+}
+
+.iconoFact-rrss {
+    font-size: 24px;
+    color: var(--blanco);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.factNews {
+    height: auto;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    display: block;
+    width: 100%;
+
+}
