@@ -25,7 +25,6 @@ h2{
     font-size: 42px;
     line-height: 48px;
     text-align: left;
-    margin-top: 80px;
     margin-bottom: 20px;
     color: var(--blanco);
 }
@@ -78,4 +77,33 @@ h2{
     display: block;
     width: 100%;
 
+}
+
+.factCard-body{
+    border: 4px;
+    border-color: var(--blanco);
+    border-style: solid;
+}
+
+.factCard-title{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color:var(--blanco);
+}
+
+.factCard-text{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color:var(--blanco);
+}
+
+.reviewFact{
+ text-align: right;
+ width: 500;
 }
