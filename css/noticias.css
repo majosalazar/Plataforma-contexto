@@ -1,0 +1,38 @@
+:root {
+    --amarillo: #E8CD32;
+    --rojo: #DD553D;
+    --azul: #5E8EF9;
+    --crema: #F1F1F1;
+    --blanco: #ffffff;
+    --negro: #000000;
+  }
+
+  .NewsTitle{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  
+    color: #000000;
+  }
+
+  .newsGesto{
+    display: block;
+    margin-bottom: 60px;
+    top: 135px;
+  }
+
+  .newsIntro{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    
+  
+    color: #000000;
+  }
