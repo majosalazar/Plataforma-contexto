@@ -1,0 +1,13 @@
+:root {
+    --amarillo: #E8CD32;
+    --rojo: #DD553D;
+    --azul: #5E8EF9;
+    --crema: #F1F1F1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+.subtitle{
+    text-align: right;
+}
+
