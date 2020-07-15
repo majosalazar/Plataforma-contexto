@@ -243,7 +243,7 @@ p {
   border: 3px solid #000000;
   margin-bottom: 25px;
   margin-top: 25px;
-  
+
 }
 
 .icono-card {
@@ -534,7 +534,7 @@ a:hover {
 @media (max-width: 768px) {
   .bloque {
     display: flex;
-    
+
     overflow-y: hidden;
     overflow-x: auto;
   }
@@ -607,10 +607,21 @@ a:hover {
     border: 5px solid #000000;
   }
 
+  .nav navbar {
+    background-color: transparent !important;
+  }
+
   .frase {
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: 0.44px;
+  
+
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
   }
 
   p {
@@ -632,8 +643,8 @@ a:hover {
   .btn-qa {
     border: 5px solid #000000;
     margin-bottom: 10px;
-    display: inline-block;   
-    
+    display: inline-block;
+
   }
 
 }
