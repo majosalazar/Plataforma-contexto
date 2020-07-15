@@ -111,8 +111,6 @@ p {
 
 .fondo-inicial {
   background-color: var(--crema);
-  height: 100vh;
-  margin-top: 60px;
 }
 
 .fondo-crema {
@@ -150,7 +148,7 @@ p {
 }
 
 .isotipo {
-  display: block;
+  
   margin-right: auto;
   margin-left: auto;
   margin-top: 7em;
