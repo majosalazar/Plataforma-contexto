@@ -1,38 +1,68 @@
 .homeTitle {
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 48px;
-    text-align: left;
-    margin-bottom: 20px;
-
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
     color: #000000;
 }
 
 .SectionContent {
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
 }
 
 .SectionContent2 {
+    color: white;
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
 }
 
-.homeTitle2{
+.homeTitle2 {
+    color: white;
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 48px;
-    text-align: left;
-    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+}
 
+.homeTitle3 {
     color: white;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 84px;
+    letter-spacing: 0.01em;
+}
+
+.iconTitle {
+    width: 70px;
+    height: 77px;
+    margin-left: 10px;
+}
+
+.linea1 {
+    border: 2px solid #000000;
+    background: #000000;
+}
+
+.linea2 {
+    border: 2px solid #ffffff;
+    background: #ffffff;
+}
+
+li {
+    list-style:none
 }
