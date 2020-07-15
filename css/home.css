@@ -1,0 +1,38 @@
+.homeTitle {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    color: #000000;
+}
+
+.SectionContent {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.SectionContent2 {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: white;
+}
+
+.homeTitle2{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+
+    color: white;
+}
