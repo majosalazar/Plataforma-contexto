@@ -48,6 +48,7 @@
           <a class="nav-link dropdown-toggle" href="..." id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Infórmate</a>
+
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Notocias</a>
             <a class="dropdown-item" href="opinion.html">Opinión experta</a>
@@ -167,8 +168,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="homeTitle">Infórmate</h1>
-          <div class="row">
+          <div class="d-flex card-hover" type="button" data-toggle="collapse" data-target="#collapseInformate"
+            aria-expanded="false" aria-controls="collapseInformate">
+            <h1 class="homeTitle">Infórmate</h1>
+            <img src="/img/Iconos/informate.svg" alt="" class="iconTitle">
+          </div>
+          <div class="row collapse" id="collapseInformate">
+            <hr class="linea1">
             <div class="col-6">
               <ul>
                 <li class="SectionContent">Opinión Experta</li>
@@ -189,12 +195,18 @@
       </div>
     </div>
   </section>
+
   <section class="container-fluid fondo-amarillo pb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="homeTitle">Actívate</h1>
-          <div class="row">
+          <div class="d-flex card-hover" type="button" data-toggle="collapse" data-target="#collapseActivate" aria-expanded="false"
+            aria-controls="collapseActivate">
+            <h1 class="homeTitle">Actívate</h1>
+            <img src="/img/Iconos/activate.svg" alt="" class="iconTitle">
+          </div>
+          <div class="row collapse" id="collapseActivate">
+            <hr class="linea1">
             <div class="col-6">
               <ul>
                 <li class="SectionContent">Actividades</li>
@@ -206,18 +218,26 @@
       </div>
     </div>
   </section>
+
+  <!-- contexto factual -->
   <section class="container-fluid fondo-negro pb-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="homeTitle2">Contexto Factual</h1>
-          <div class="row">
+          <div class="d-flex card-hover" type="button" data-toggle="collapse" data-target="#collapseFactual" aria-expanded="false"
+            aria-controls="collapseFactual">
+            <h1 class="homeTitle2">Contexto</h1>
+            <h1 class="homeTitle3">Factual</h1>
+            <img src="/img/Iconos/factual.svg" alt="" class="iconTitle">
+          </div>
+          <div class="row collapse" id="collapseFactual">
+            <hr class="linea2">
             <div class="col-6">
               <ul>
                 <li class="SectionContent2">Noticias</li>
                 <li class="SectionContent2">Fastchecking</li>
                 <li class="SectionContent2">Reportajes</li>
-               >
+                >
               </ul>
             </div>
             <div class="col-6">
@@ -232,151 +252,9 @@
       </div>
     </div>
   </section>
- 
-  <!-- fin sección recursos -->
-
- 
-
-  <!-- inicio sección Q&A -->
-  <section class="container-fluid fondo-amarillo py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="/img/Iconos/icono qa-2.svg" class="icono-qa" alt="">
-          <h1 class="titulo-qa">Preguntas y respuestas</h1>
-          <!-- 
-            <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut
-              labore et dolore magna aliqua.
-            </p>
-
-           -->
-        </div>
-        <div class="col-md-8">
-
-          <!-- preguntas colapsables -->
-          <div class="accordion" id="accordionExample">
-            <div class="">
-              <div class="card-pregunta" id="headingOne">
-                <h2 class="mb-0 collapse-chevron-wrap">
-                  <button class="btn btn-pregunta collapsed" type="button">
-                    ¿Afecta la Constitución nuestras vidas?
-                  </button>
-                  <div id="chevron_1" class="chevron chevron-1 chevron-start-down" data-toggle="collapse"
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
-                </h2>
-              </div>
-
-              <div id="collapseOne" class="collapse show">
-
-                <div class="card-respuesta">
-                  <p>La Constitución nos afecta directa e indirectamente.
-                    <br>
-                    <br>
-                    <b>Directamente</b>, porque ciertas definiciones en la Constitución otorga derechos y/o establecen
-                    obligaciones, ademas que se distribuye poder en la sociedad. Por ejemplo, la obligatoriedad del
-                    servicio militar, o la obligatoriedad de pagar impuestos son dos impactos directos. Además,
-                    establece
-                    obligaciones al Estado para entregar ciertos servicios o preocuparse de atender ciertos derechos de
-                    la
-                    sociedad.
-                    <br>
-                    <br>
-                    <b>Indirectamente</b>, porque cualquier ley o reglamento debe ser consistente con la Constitución.
-                    Por lo
-                    tanto, toda ley debe responder a los principios establecidos en una Constitución.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <br>
-
-            <div class="">
-              <div class="card-pregunta" id="headingTwo">
-                <h2 class="mb-0 collapse-chevron-wrap">
-                  <button class="btn btn-pregunta collapsed" type="button">
-                    ¿Qué es un Proceso Constituyente?
-                  </button>
-                  <div class="chevron chevron-1 chevron-start-down" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo">
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
-                </h2>
-              </div>
-              <div id="collapseTwo" class="collapse">
-                <div class="card-respuesta">
-                  <p>
-                    Un proceso constituyente considera todas las fases asociadas a escribir una Constitución. Los
-                    procesos
-                    constituyen suelen considerar una fase de competência electoral integrantes de una Asamblea o
-                    Convención que redactará la nueva Constitución; una fase deliberativa de la Convención que implica
-                    el
-                    processo de escribir una nueva Carta Constitucional; y una fase resolutiva final que implica que la
-                    ciudadanía se pronuncie sobre el texto propuesto.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <br>
-
-            <div class="">
-              <div class="card-pregunta" id="headingThree">
-                <h2 class="mb-0 collapse-chevron-wrap">
-                  <button class="btn btn-pregunta collapsed">
-                    ¿Qué se preguntará en el plebiscito del 25 de octubre de 2020?
-                  </button>
-                  <div class="chevron chevron-1 chevron-start-down" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <!-- <img src="/img/Iconos/chevron-down.svg" class="icono-down" alt=""> -->
-                </h2>
-              </div>
-              <div id="collapseThree" class="collapse">
-                <div class="card-respuesta">
-                  <p>
-                    Habrá dos votos, en uno se pregunta: ¿Quiere ud. una nueva Constitución?
-                    Con las opciones:
-                    <br><br>
-                    — Apruebo
-                    — Rechazo
-                    <br><br>
-                    La segunda pregunta dice: ¿Qué tipo de órgano debiera redactar la nueva
-                    Constitución? Con las opciones:
-                    <br><br>
-                    — Convención mixta Constitucional. Integrada en partes
-                    iguales por miembros elegidos popularmente y
-                    parlamentarios o parlamentarias en ejercicio.
-                    <br><br>
-                    — Convención constitucional. Integrada exclusivamente por
-                    miembros elegidos popularmente
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- fin preguntas -->
-          <div class="d-flex justify-content-center">
-            <div class="btn-contexto-container">
-              <img src="/img/gestos/flecha-gesto.svg" class="flecha-gesto" alt="">
-              <button class="btn-contexto">Ver más ...</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- Fin sección Q&A -->
 
   <!-- inicio sección agenda-->
-  <section class="container-fluid fondo-amarillo">
+  <section class="container-fluid fondo-rojo">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -456,6 +334,7 @@
   <!-- fin agenda -->
 
 
+
   <!-- Inicio footer -->
   <section id="footer">
     <div class="container">
@@ -524,13 +403,13 @@
   <!-- bootstrap script -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="./app.js"></script>
 </body>
 
