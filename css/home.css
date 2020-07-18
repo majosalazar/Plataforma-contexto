@@ -76,6 +76,12 @@ li {
     height: 74px;
 }
 
+.iconTitle3 {
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 30px;
+}
+
 a {
     color: black;
 }
@@ -150,6 +156,12 @@ a:hover {
         margin-left: 10px;
         margin-top: 15px;
         height: 74px;
+    }
+
+    .iconTitle3 {
+        margin-left: 10px;
+        margin-top: 5px;
+        height: 50px;
     }
 
 }
