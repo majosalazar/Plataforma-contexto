@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/chevron.css">
     <link rel="stylesheet" href="css/informate.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -47,13 +48,13 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Infórmate</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Noticias</a>
+                        <a class="dropdown-item" href="noticias.html">Noticias</a>
                         <a class="dropdown-item" href="opinion.html">Opinión experta</a>
-                        <a class="dropdown-item" href="#">Minuta constitucional</a>
-                        <a class="dropdown-item" href="#">Material didáctico</a>
-                        <a class="dropdown-item" href="#">Textos constitucionales</a>
-                        <a class="dropdown-item" href="#">En cámara</a>
-                        <a class="dropdown-item" href="#">Preguntas y respuestas</a>
+                        <a class="dropdown-item" href="minuta.html">Minuta constitucional</a>
+                        <a class="dropdown-item" href="material-didactico.html">Material didáctico</a>
+                        <a class="dropdown-item" href="compara.html">Textos constitucionales</a>
+                        <a class="dropdown-item" href="enCamara.html">En cámara</a>
+                        <a class="dropdown-item" href="preguntas-y-respuestas.html">Preguntas y respuestas</a>
                         <!-- <a class="dropdown-item" href="#">Multimedia</a>
 
                     <a class="dropdown-item dropdown-toggle" href="#" role="button"
@@ -74,8 +75,8 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Actívate</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Seminarios/ Talleres</a>
-                        <a class="dropdown-item" href="#">Iniciativas ciudadanas</a>
+                        <a class="dropdown-item" href="Seminarios.html">Seminarios/ Talleres</a>
+                        <a class="dropdown-item" href="iniciativas-ciudadanas.html">Iniciativas ciudadanas</a>
                     </div>
                 </li>
 
@@ -123,7 +124,7 @@
                     </nav>
 
                     <div class="d-flex mb-4">
-                        <h1 class="homeTitle"><a href="informate.html">Infórmate</a></h1>
+                        <h1 class="homeTitle">Infórmate</h1>
                         <img src="img/Iconos/informate.svg" alt="" class="iconTitle">
                     </div>
                 </div>
@@ -153,18 +154,21 @@
                     <div class="card-deck">
                         <div class="card card-img card-hover">
                             <img src="img/img/plebiscito.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">21 de Julio 2020</p>
-                                <h5 class="titulo-card">Plebiscito será el 25 de octubre y municipales el 24 de abril de
-                                    2021</h5>
-                                <div class="d-flex justify-content-star">
+                            <a href="evento.html">
+                                <div class="card-body">
+                                    <p class="card-text">21 de Julio 2020</p>
+                                    <h5 class="titulo-card">Plebiscito será el 25 de octubre y municipales el 24 de abril de
+                                        2021</h5>
+                                    <div class="d-flex justify-content-star">
+                                    </div>
+                                    <div class="d-flex justify-content-end card-btn-container">
+                                        <p class="mb-0 mr-2">Ver más</p>
+                                        <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
+                                    </div>
                                 </div>
-                                <div class="d-flex justify-content-end card-btn-container">
-                                    <p class="mb-0 mr-2">Ver más</p>
-                                    <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-                                </div>
-                            </div>
+                            </a>
                         </div>
+                        
 
                     </div>
                 </div>
@@ -174,70 +178,85 @@
                             href="https://twitter.com/udp_cl?ref_src=twsrc%5Etfw">Tweets by udp_cl</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-                    <div class="card card-img card-hover">
-                        <div class="card-body">
-                            <img src="img/img/descarga.svg" class="card-img-top imgGesto" alt="...">
-
-                            <h5 class="titulo-card mt-2">Documentos descargables</h5>
+                    <a href="material-didactico.html">
+                        <div class="card card-img card-hover">
+                            <div class="card-body">
+                                <img src="img/img/descarga.svg" alt="" class="card-img-top imgGesto">
+                                <h5 class="titulo-card mt-2">Documentos descargables</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4  col-sm-12">
-                    <div class="card card-img card-hover">
-                        <img src="img/img/video2.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">En Cámara</h5>
+                    <a href="">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/video2.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">En Cámara</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card card-img card-hover">
-                        <img src="img/img/microphone.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Podcast</h5>
+                    <a href="enCamara.html">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/microphone.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">Podcast</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <div class="card card-img card-hover">
-                        <img src="img/img/text.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Textos Constitucionales</h5>
+                    <a href="compara.html">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/text.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">Textos Constitucionales</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card card-img card-hover">
-                        <img src="img/img/expert.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Opinión Experta</h5>
+                    <a href="opinion-experta.html">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/expert.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">Opinión Experta</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card card-img card-hover">
-                        <img src="img/img/vote.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Minuta Constituyente</h5>
+                    </a>
+                    <a href="minuta.html">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/vote.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">Minuta Constituyente</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="card card-img card-hover">
-                        <div class="card-body">
-                            <img src="img/img/pregunta.svg" class="card-img-top" alt="...">
-                            <h5 class="titulo-card mt-3">Material Didáctico</h5>
+                    <a href="material-didactico.html">
+                        <div class="card card-img card-hover">
+                            <div class="card-body">
+                                <img src="img/img/pregunta.svg" class="card-img-top" alt="...">
+                                <h5 class="titulo-card mt-3">Material Didáctico</h5>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card card-img card-hover">
-                        <img src="img/img/diagram.png" class="card-img-top borderImg" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Otros Recursos</h5>
+                    </a>
+                    <a href="material-didactico.html">
+                        <div class="card card-img card-hover">
+                            <img src="img/img/diagram.png" class="card-img-top borderImg" alt="...">
+                            <div class="card-body">
+                                <h5 class="titulo-card">Otros Recursos</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -270,10 +289,10 @@
                 <div class="col-md-4">
                     <h5>Mapa del sitio:</h5>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="#">Quienes somos</a></li>
-                        <li><a href="#">Infórmate</a></li>
-                        <li><a href="#">Actívate</a></li>
-                        <li><a href="#">Contexto factual</a>
+                        <li><a href="quienes-somos.html">Quienes somos</a></li>
+                        <li><a href="informate.html">Infórmate</a></li>
+                        <li><a href="activate.html">Actívate</a></li>
+                        <li><a href="factual.html">Contexto factual</a>
                         </li>
                         
                     </ul>

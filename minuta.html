@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/chevron.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -25,86 +27,86 @@
   <!-- inicio navbar -->
   <nav class="navbar navbar-expand-lg navbar-light navbar-contexto fixed-top">
     <a class="navbar-brand" href="index.html">
-        <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
+      <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
     </a>
     <!-- menu hamburguesa -->
     <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
-        <!-- <span class="navbar-toggler-icon"></span> -->
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
+      <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Quienes somos</a>
-            </li>
-            <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="..." id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Infórmate</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Noticias</a>
-                    <a class="dropdown-item" href="opinion.html">Opinión experta</a>
-                    <a class="dropdown-item active" href="#">Minuta constitucional</a>
-                    <a class="dropdown-item" href="#">Material didáctico</a>
-                    <a class="dropdown-item" href="#">Textos constitucionales</a>
-                    <a class="dropdown-item" href="#">En cámara</a>
-                    <a class="dropdown-item" href="#">Preguntas y respuestas</a>
-                    <!-- <a class="dropdown-item" href="#">Multimedia</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="..." id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Infórmate</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="noticias.html">Noticias</a>
+            <a class="dropdown-item" href="opinion.html">Opinión experta</a>
+            <a class="dropdown-item active" href="minuta.html">Minuta constitucional</a>
+            <a class="dropdown-item" href="material-didactico.html">Material didáctico</a>
+            <a class="dropdown-item" href="compara.html">Textos constitucionales</a>
+            <a class="dropdown-item" href="enCamara.html>En cámara</a>
+                    <a class=" dropdown-item" href="preguntas-y-respuestas.html">Preguntas y respuestas</a>
+            <!-- <a class="dropdown-item" href="#">Multimedia</a>
 
                     <a class="dropdown-item dropdown-toggle" href="#" role="button"
                         data-toggle="dropdown">Multimedia</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Infografías</a>
                     </div> -->
-                    <!-- 
+            <!-- 
               <a class="dropdown-item" href="#">Videos</a>
               <a class="dropdown-item" href="#">Podcast</a>
               <a class="dropdown-item" href="#">Infografías</a>
             -->
-                </div>
-            </li>
+          </div>
+        </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Actívate</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Seminarios/ Talleres</a>
-                    <a class="dropdown-item" href="#">Iniciativas ciudadanas</a>
-                </div>
-            </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Actívate</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Seminarios/ Talleres</a>
+            <a class="dropdown-item" href="#">Iniciativas ciudadanas</a>
+          </div>
+        </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contexto factual</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Noticias</a>
-                    <a class="dropdown-item" href="#">Reportajes</a>
-                    <a class="dropdown-item" href="#">Consejo editorial</a>
-                </div>
-            </li>
-        </ul>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Contexto factual</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Noticias</a>
+            <a class="dropdown-item" href="#">Reportajes</a>
+            <a class="dropdown-item" href="#">Consejo editorial</a>
+          </div>
+        </li>
+      </ul>
 
-        <div class="buscar d-none d-md-block">
-            <input type="text" class="buscar_texto">
-            <a href="" class="boton">
-                <img src="img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
-            </a>
+      <div class="buscar d-none d-md-block">
+        <input type="text" class="buscar_texto">
+        <a href="" class="boton">
+          <img src="img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+        </a>
+      </div>
+      <form class="form-inline my-2 my-lg-0 d-md-none">
+        <div class="buscar-mobile">
+          <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <a class="Icono " href="">
+            <img src="img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
+          </a>
         </div>
-        <form class="form-inline my-2 my-lg-0 d-md-none">
-            <div class="buscar-mobile">
-                <input class="form-control-sm" type="Buscar" placeholder="Buscar" aria-label="Buscar">
-                <a class="Icono " href="">
-                    <img src="img/Iconos/lupa.svg" width="40" height="40" alt="Buscar">
-                </a>
-            </div>
-        </form>
+      </form>
     </div>
-</nav> 
+  </nav>
   <!-- fin navbar -->
 
   <!-- inicio sección color -->
@@ -115,8 +117,8 @@
 
           <nav aria-label="breadcrumb">
             <ol class="breadcrumbs">
-              <li class="breadcrumb-item"><a class="color-texto" href="#">Inicio</a></li>
-              <li class="breadcrumb-item"><a class="color-texto" href="#">Actívate</a></li>
+              <li class="breadcrumb-item"><a class="color-texto" href="index.html">Inicio</a></li>
+              <li class="breadcrumb-item"><a class="color-texto" href="activate.html">Infórmate</a></li>
               <li class="breadcrumb-item" aria-current="page">Minuta constitucional</li>
             </ol>
           </nav>
@@ -146,117 +148,129 @@
     <div class="row">
 
       <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
             </div>
           </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+  
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+  
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
+            </div>
+        </a>
         </div>
       </div>
 
       <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+  
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+  
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+        <a href="#">
+          <div class="card-img card-hover">
+            <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="titulo-card">Nombre del informe</h5>
+              <p class="card-text">Autor(es): Nombre Some quick example</p>
+  
+              <div class="d-flex justify-content-star">
+                <p class="mb-0 mr-2">5'</p>
+                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
+              </div>
+              <div class="d-flex justify-content-end card-btn-container">
+                <p class="mb-0 mr-2">Descargar</p>
+                <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card-img card-hover">
-          <img src="img/img/prueba-card.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="titulo-card">Nombre del informe</h5>
-            <p class="card-text">Autor(es): Nombre Some quick example</p>
-           
-            <div class="d-flex justify-content-star">
-              <p class="mb-0 mr-2">5'</p>
-              <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-            </div>
-            <div class="d-flex justify-content-end card-btn-container">
-              <p class="mb-0 mr-2">Descargar</p>
-              <img src="img/Iconos/Descarga - fondoBlanco.svg" alt="" class="btn-descargar">
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
 
 
@@ -292,10 +306,10 @@
         <div class="col-md-4">
           <h5>Mapa del sitio:</h5>
           <ul class="list-unstyled quick-links">
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Infórmate</a></li>
-            <li><a href="#">Activate</a></li>
-            <li><a href="#">Contexto Factual</a>
+            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="informate.html">Infórmate</a></li>
+            <li><a href="activate.html">Activate</a></li>
+            <li><a href="factual.html">Contexto Factual</a>
             </li>
             <!--  <li><a href="">Preguntas y respuestas</a></li>
             <li><a href="">Agenda</a></li>
@@ -307,16 +321,12 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
           <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a>
             </li>
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#"><i
-                  class="fa fa-google-plus"></i></a></li>
-            <li class="list-inline-item"><a href="#" target="_blank"><i
-                  class="fa fa-envelope"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
           </ul>
         </div>
         <br>
@@ -344,7 +354,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-  <script src="./app.js"></script>  
+  <script src="./app.js"></script>
 </body>
 
 </html>
