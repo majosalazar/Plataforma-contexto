@@ -13,7 +13,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 2px;
+    font-size: 28px;
     line-height: 50px;
     letter-spacing: 0.02em;
 }
@@ -152,4 +152,55 @@ a:hover {
         height: 74px;
     }
 
+}
+
+.a-home {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.a-home:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    transition: left .3s;
+}
+
+.a-home:hover:after {
+    left: 0;
+}
+
+.a-home2 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.a-home2:hover {
+    color: white;
+}
+
+.a-home2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    color: #ffffff;
+    transition: left .3s;
+}
+
+.a-home2:hover:after {
+    left: 0;
 }

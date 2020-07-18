@@ -158,8 +158,6 @@ p {
 
 }
 
-
-
 [type="button"], button {
   background: none;
   color: inherit;
@@ -370,6 +368,23 @@ h3 {
 
 }
 
+.btn-contexto2 {
+  background: var(--negro);
+  border: 3px solid #ffffff;
+  color: var(--blanco);
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+.btn-contexto2:hover {
+  background-color: var(--blanco);
+  color: var(--negro);
+}
 
 .flecha-gesto {
   width: 130px;
@@ -391,7 +406,6 @@ h3 {
   height: 82px;
   left: 14px;
   top: 25px;
-
 }
 
 .fecha-mes {
