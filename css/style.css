@@ -193,15 +193,15 @@ p {
 }
 
 .frase {
-  font-family: Karla;
+  font-family: Space Grotesk;
   font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
   display: flex;
   align-items: center;
   letter-spacing: 0.44px;
-
-  color: #000000;
+  margin-top: 70%;
 }
 
 .nav-link {

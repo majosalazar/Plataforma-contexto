@@ -2,7 +2,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 35px;
     line-height: 84px;
     letter-spacing: 0.01em;
     color: #000000;
@@ -12,7 +12,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 50px;
     letter-spacing: 0.02em;
 }
@@ -22,7 +22,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 42px;
+    font-size: 28px;
     line-height: 50px;
     letter-spacing: 0.02em;
 }
@@ -32,7 +32,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: normal;
-    font-size: 55px;
+    font-size: 35px;
     line-height: 84px;
     letter-spacing: 0.01em;
 }
@@ -42,7 +42,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 35px;
     line-height: 84px;
     letter-spacing: 0.01em;
 }
@@ -64,7 +64,7 @@
 }
 
 li {
-    list-style:none
+    list-style: none
 }
 
 .iconTitle2 {
@@ -83,4 +83,67 @@ a:hover {
 
 .icono-frase {
     height: 50px;
+}
+
+@media (min-width:768px) {
+    .homeTitle {
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 84px;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
+
+    .SectionContent {
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: 0.02em;
+    }
+
+    .SectionContent2 {
+        color: white;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
+        letter-spacing: 0.02em;
+    }
+
+    .homeTitle2 {
+        color: white;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 55px;
+        line-height: 84px;
+        letter-spacing: 0.01em;
+    }
+
+    .homeTitle3 {
+        color: white;
+        font-family: Space Grotesk;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 84px;
+        letter-spacing: 0.01em;
+    }
+
+    .iconTitle {
+        height: 544px;
+        margin-left: 10px;
+    }
+
+    .iconTitle2 {
+        margin-left: 10px;
+        margin-top: 15px;
+        height: 54px;
+    }
+
 }
