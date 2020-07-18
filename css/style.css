@@ -158,7 +158,9 @@ p {
 
 }
 
-button {
+
+
+[type="button"], button {
   background: none;
   color: inherit;
   border: none;
@@ -167,6 +169,7 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
 
 .titulo {
   font-family: Space Grotesk;
