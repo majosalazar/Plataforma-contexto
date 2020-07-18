@@ -788,3 +788,11 @@ section .section-title {
   text-decoration: none;
   background-color: var(--negro);
 }
+
+.enlace {
+  color: var(--negro);
+}
+
+.enlace:hover {
+  color: var(--negro);
+}
