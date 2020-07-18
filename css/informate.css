@@ -7,36 +7,36 @@
     --negro: #000000;
 }
 
-.subtitle{
+.subtitle {
     text-align: left;
 }
 
-.informateTitle{
+.informateTitle {
     font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 38px;
-  line-height: 48px;
-  text-align: left;
-  margin-top: 80px;
-  margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 48px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
 
-  color: #000000;
-}
-.card-img{
-background:var(--azul);
-border: 3px solid #000000;
-margin-bottom: 25px;
-margin-top: 25px;
+    color: #000000;
 }
 
-.imgGesto{
-width: 60%;
+.card-img {
+    background: var(--azul);
+    border: 3px solid #000000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.imgGesto {
+    width: 60%;
 
 
 }
 
-.borderImg{
+.borderImg {
     border-bottom: 3px solid #000000;
 }
-
