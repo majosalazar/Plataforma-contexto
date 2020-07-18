@@ -2,7 +2,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 55px;
     line-height: 84px;
     letter-spacing: 0.01em;
     color: #000000;
@@ -32,7 +32,7 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: normal;
-    font-size: 70px;
+    font-size: 55px;
     line-height: 84px;
     letter-spacing: 0.01em;
 }
@@ -42,14 +42,14 @@
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 55px;
     line-height: 84px;
     letter-spacing: 0.01em;
 }
 
 .iconTitle {
-    width: 70px;
-    height: 77px;
+    width: 67px;
+    height: 74px;
     margin-left: 10px;
 }
 
@@ -65,4 +65,22 @@
 
 li {
     list-style:none
+}
+
+.iconTitle2 {
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 74px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.icono-frase {
+    height: 50px;
 }

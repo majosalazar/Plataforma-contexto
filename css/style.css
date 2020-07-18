@@ -76,7 +76,7 @@
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 19px;
 
   color: #000000;
@@ -111,6 +111,7 @@ p {
 
 .fondo-inicial {
   background-color: var(--crema);
+  height: 100vh;
 }
 
 .fondo-crema {
@@ -148,7 +149,7 @@ p {
 }
 
 .isotipo {
-  
+
   margin-right: auto;
   margin-left: auto;
   margin-top: 7em;
@@ -162,9 +163,9 @@ p {
   font-weight: 600;
   font-size: 38px;
   line-height: 48px;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 40px;
 
   color: #000000;
 }
@@ -556,7 +557,7 @@ a:hover {
   }
 
   .titulo {
-    font-size: 50px;
+    font-size: 55px;
     line-height: 48px;
   }
 
@@ -610,16 +611,13 @@ a:hover {
   }
 
   .frase {
-  
-
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 48px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 117.5%;
+    margin-top: 30%;
+
   }
 
   p {
