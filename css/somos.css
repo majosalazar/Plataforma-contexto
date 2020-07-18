@@ -1,0 +1,87 @@
+:root {
+    --amarillo: #E8CD32;
+    --rojo: #DD553D;
+    --azul: #5E8EF9;
+    --crema: #F1F1F1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+.weTitle {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: left;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+    color: #000000;
+}
+
+.weGesto{
+    display: block;
+    margin-bottom: 60px;
+    top: 135px;
+}
+
+.weResum{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+    text-align: left;
+}
+
+.subTitle{
+    font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.bigIcone{
+    align-content: center;
+    width: 60%;
+}
+
+.weSubTitle{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-size: 34px;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--blanco);
+}
+
+.weResum2{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+    text-align: left;
+    color: #ffffff;
+}
+.subTitle3{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+}
+
+.weResum3{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #000000;
+    text-align: center;
+}
