@@ -110,7 +110,7 @@ h2 {
 }
 
 .reviewFact {
-    text-align: right;
     width: 500;
-    margin-left: 150px;
+    display: flex;
+    justify-content:flex-end
 }
