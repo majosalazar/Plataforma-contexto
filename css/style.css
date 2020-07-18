@@ -653,11 +653,11 @@ a:hover {
 
 @font-face {
   font-family: 'Space grotesk';
-  src: url(/css/spacegrotesk/SpaceGrotesk-Bold.otf);
-  src: url(/css/spacegrotesk/SpaceGrotesk-Light.otf);
-  src: url(/css/spacegrotesk/SpaceGrotesk-Medium.otf);
-  src: url(/css/spacegrotesk/SpaceGrotesk-Regular.otf);
-  src: url(/css/spacegrotesk/SpaceGrotesk-SemiBold.otf);
+  src: url(css/spacegrotesk/SpaceGrotesk-Bold.otf);
+  src: url(css/spacegrotesk/SpaceGrotesk-Light.otf);
+  src: url(css/spacegrotesk/SpaceGrotesk-Medium.otf);
+  src: url(css/spacegrotesk/SpaceGrotesk-Regular.otf);
+  src: url(css/spacegrotesk/SpaceGrotesk-SemiBold.otf);
 }
 
 
