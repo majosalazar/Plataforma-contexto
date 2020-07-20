@@ -114,3 +114,27 @@ h2 {
     display: flex;
     justify-content:flex-end
 }
+
+.factCardWhite-title{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color: var(--negro);
+}
+
+.factCardWhite-body{
+    border: 4px;
+    border-color: var(--negro);
+    border-style: solid;
+}
+
+.factCardWhite-text{
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: left;
+    color: var(--negro); 
+}
