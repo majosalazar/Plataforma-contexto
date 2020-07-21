@@ -18,15 +18,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/chevron.css">
-    <link rel="stylesheet" href="css/informate.css">
+    <link rel="stylesheet" href="css/factual.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/normalize.css">
-</head>
+    <link rel="stylesheet" href="normalize.css">
 
 <body>
 
     <!-- inicio NUEVO navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-contexto fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-contexto fixed-top">
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.svg" class="logo" alt="logo plataforma contexto">
         </a>
@@ -34,17 +33,17 @@
         <button class="navbar-toggler navbar-toggleable-md" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <a href="#" class="menu-hamb collapse-hamb"><span></span></a>
+            <a href="..." class="menu-hamb collapse-hamb"><span></span></a>
             <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quienes somos</a>
+                    <a class="nav-link" href="quienes-somos.html">Quienes somos</a>
                 </li>
-                <li class="nav-item active dropdown">
-                    <a class="nav-link dropdown-toggle" href="..." id="navbarDropdown" role="button"
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="informate.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Infórmate</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +70,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="activate.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Actívate</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -81,15 +80,15 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle active" href="factual.html" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Contexto factual</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="factualNews.html">Noticias</a>
-                        <a class="dropdown-item" href="factualNews.html">Reportajes</a>
-                        <a class="dropdown-item" href="factualNews.html">Notas</a>
+                        <a class="dropdown-item" href="noticias.html">Noticias</a>
+                        <a class="dropdown-item" href="noticias.html">Reportajes</a>
+                        <a class="dropdown-item" href="noticias.html">Notas</a>
                         <a class="dropdown-item" href="factChecking.html">FactChecking</a>
-                        <a class="dropdown-item" href="metodologia.html">Metodología</a>
+                        <a class="dropdown-item active" href="metodologia.html">Metodología</a>
                         <a class="dropdown-item" href="consejo-editorial.html">Consejo editorial</a>
                     </div>
                 </li>
@@ -114,156 +113,100 @@
     <!-- fin NUEVO navbar -->
 
     <!-- inicio sección color -->
-    <section class="container-fluid fondo-azul pb-3">
+    <section class="container-fluid fondo-negro pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumbs">
-                            <li class="breadcrumb-item"><a class="color-texto" href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Infórmate</li>
+                            <li class="breadcrumb-itemFact"><a class="color-texto-factual" href="index.html">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-itemFact"><a class="color-texto-factual" href="factual.html">Contexto
+                                    Factual</a></li>
+                            <li class="breadcrumb-itemFact color-texto-factual" aria-current="page">Factchecking</li>
                         </ol>
                     </nav>
 
-                    <div class="d-flex mb-4">
-                        <h1 class="homeTitle">Infórmate</h1>
-                        <img src="img/Iconos/informate.svg" alt="" class="iconTitle">
-                    </div>
+                    <h2 class="mt-5 mb-4">Metodología</h2>
+                    <p class="resumenFact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
+                        incidunt ut
+                        labore et dolore magna aliqua.
+                    </p>
                 </div>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-12 pt-5">
                     <ul class="text-left">
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-envelope icono-rrss"></i></a></li>
+                                    class="fa fa-envelope iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-facebook icono-rrss"></i></a></li>
+                                    class="fa fa-facebook iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-share-alt icono-rrss"></i></a></li>
+                                    class="fa fa-share-alt iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-twitter icono-rrss"></i></a></li>
+                                    class="fa fa-twitter iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-whatsapp icono-rrss"></i></a></li>
+                                    class="fa fa-whatsapp iconoFact-rrss"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- fin sección noticias -->
-    <section class="container-fluid fondo-azul">
+    <!-- fin sección color -->
+
+    <!-- inicio sección cards -->
+    <section class="container-fluid pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <div class="card-deck">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/plebiscito.png" class="card-img-top borderImg" alt="...">
-                            <a href="evento.html">
-                                <div class="card-body">
-                                    <p class="card-text">21 de Julio 2020</p>
-                                    <h5 class="titulo-card">Plebiscito será el 25 de octubre y municipales el 24 de abril de
-                                        2021</h5>
-                                    <div class="d-flex justify-content-star">
-                                    </div>
-                                    <div class="d-flex justify-content-end card-btn-container">
-                                        <p class="mb-0 mr-2">Ver más</p>
-                                        <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="card card-img card-hover">
-                        <a class="twitter-timeline" data-lang="es" data-width="400" data-height="350"
-                            href="https://twitter.com/udp_cl?ref_src=twsrc%5Etfw">Tweets by udp_cl</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>
-                    <a href="material-didactico.html">
-                        <div class="card card-img card-hover">
-                            <div class="card-body">
-                                <img src="img/img/descarga.svg" alt="" class="card-img-top imgGesto">
-                                <h5 class="titulo-card mt-2">Documentos descargables</h5>
-                            </div>
-                        </div>
-                    </a>
-
+                <div class="col-sm-12 mb-4">
+                    <p class="factCardWhite-text mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                        non nihil? Tempora maxime quam dolorem qui. Non temporibus voluptates autem sequi placeat, a,
+                        praesentium incidunt hic eum optio ut aperiam. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Commodi velit voluptates quos quisquam doloremque consequatur, reiciendis aut
+                        numquam, consectetur deserunt inventore modi tempora maiores, totam quas incidunt ducimus esse
+                        dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus odio libero minus
+                        saepe quod inventore, aut possimus sequi veniam numquam omnis quidem dolorum sint quae fugiat,
+                        sunt quia recusandae.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4  col-sm-12">
-                    <a href="">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/video2.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">En Cámara</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="enCamara.html">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/microphone.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">Podcast</h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <a href="compara.html">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/text.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">Textos Constitucionales</h5>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-sm-12 mb-4">
+                    <p class="factCardWhite-text mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                        non nihil? Tempora maxime quam dolorem qui. Non temporibus voluptates autem sequi placeat, a,
+                        praesentium incidunt hic eum optio ut aperiam. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Commodi velit voluptates quos quisquam doloremque consequatur, reiciendis aut
+                        numquam, consectetur deserunt inventore modi tempora maiores, totam quas incidunt ducimus esse
+                        dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus odio libero minus
+                        saepe quod inventore, aut possimus sequi veniam numquam omnis quidem dolorum sint quae fugiat,
+                        sunt quia recusandae.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a href="opinion-experta.html">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/expert.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">Opinión Experta</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="minuta.html">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/vote.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">Minuta Constituyente</h5>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-sm-12 mb-4">
+                    <p class="factCardWhite-text mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                        non nihil? Tempora maxime quam dolorem qui. Non temporibus voluptates autem sequi placeat, a,
+                        praesentium incidunt hic eum optio ut aperiam. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Commodi velit voluptates quos quisquam doloremque consequatur, reiciendis aut
+                        numquam, consectetur deserunt inventore modi tempora maiores, totam quas incidunt ducimus esse
+                        dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus odio libero minus
+                        saepe quod inventore, aut possimus sequi veniam numquam omnis quidem dolorum sint quae fugiat,
+                        sunt quia recusandae.</p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <a href="material-didactico.html">
-                        <div class="card card-img card-hover">
-                            <div class="card-body">
-                                <img src="img/img/pregunta.svg" class="card-img-top" alt="...">
-                                <h5 class="titulo-card mt-3">Material Didáctico</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="material-didactico.html">
-                        <div class="card card-img card-hover">
-                            <img src="img/img/diagram.png" class="card-img-top borderImg" alt="...">
-                            <div class="card-body">
-                                <h5 class="titulo-card">Otros Recursos</h5>
-                            </div>
-                        </div>
-                    </a>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mb-4">
+                    <p class="factCardWhite-text mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                        non nihil? Tempora maxime quam dolorem qui. Non temporibus voluptates autem sequi placeat, a,
+                        praesentium incidunt hic eum optio ut aperiam. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Commodi velit voluptates quos quisquam doloremque consequatur, reiciendis aut
+                        numquam, consectetur deserunt inventore modi tempora maiores, totam quas incidunt ducimus esse
+                        dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit natus odio libero minus
+                        saepe quod inventore, aut possimus sequi veniam numquam omnis quidem dolorum sint quae fugiat,
+                        sunt quia recusandae.</p>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Inicio footer -->
     <section id="footer">
@@ -292,12 +235,14 @@
                 <div class="col-md-4">
                     <h5>Mapa del sitio:</h5>
                     <ul class="list-unstyled quick-links">
-                        <li><a href="quienes-somos.html">Quienes somos</a></li>
+                        <li><a href="quienes-somos.html">Quienes Somos</a></li>
                         <li><a href="informate.html">Infórmate</a></li>
-                        <li><a href="activate.html">Actívate</a></li>
-                        <li><a href="factual.html">Contexto factual</a>
+                        <li><a href="activate.html">Activate</a></li>
+                        <li><a href="factual.html">Contexto Factual</a>
                         </li>
-                        
+                        <!--  <li><a href="">Preguntas y respuestas</a></li>
+                        <li><a href="">Agenda</a></li>
+                        <li><a href="">Contacto</a></li>-->
                     </ul>
                 </div>
 
@@ -331,13 +276,13 @@
     <!-- bootstrap script -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-        </script>
+    </script>
     <script src="./app.js"></script>
 </body>
 
