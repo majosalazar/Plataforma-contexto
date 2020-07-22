@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/chevron.css">
     <link rel="stylesheet" href="css/noticias.css">
-    <link rel="stylesheet" href="factul.css">
+    <link rel="stylesheet" href="css/factual.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
 
@@ -86,11 +86,11 @@
                         Contexto factual</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="factualNews.html">Noticias</a>
-                  <a class="dropdown-item" href="factualNews.html">Reportajes</a>
-                  <a class="dropdown-item" href="factualNews.html">Notas</a>
-                  <a class="dropdown-item" href="factChecking.html">FactChecking</a>
-                  <a class="dropdown-item" href="metodologia.html">Metodología</a>
-                  <a class="dropdown-item" href="consejo-editorial.html">Consejo editorial</a>
+                        <a class="dropdown-item" href="general-reportajes.html">Reportajes</a>
+                        <a class="dropdown-item" href="factualNews.html">Notas</a>
+                        <a class="dropdown-item" href="factChecking.html">FactChecking</a>
+                        <a class="dropdown-item" href="metodologia.html">Metodología</a>
+                        <a class="dropdown-item" href="consejo-editorial.html">Consejo editorial</a>
                     </div>
                 </li>
             </ul>
@@ -114,21 +114,24 @@
     <!-- fin NUEVO navbar -->
 
     <!-- inicio sección color -->
-    <section class="container-fluid fondo-azul pb-3">
+    <section class="container-fluid fondo-negro pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
 
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumbs">
-                            <li class="breadcrumb-item"><a class="color-texto" href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item"><a class="color-texto" href="informate.html">Infórmate</a></li>
-                            <li class="breadcrumb-item" aria-current="page">Noticias</li>
+                            <li class="breadcrumb-itemFact"><a class="color-texto-factual" href="index.html">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-itemFact"><a class="color-texto-factual" href="index.html">Contexto
+                                    Factual</a></li>
+                            <li class="breadcrumb-itemFact color-texto-factual" aria-current="page">Reportajes</li>
+
                         </ol>
                     </nav>
 
-                    <h1 class="titulo mt-5 mb-4">Noticias</h1>
-                    <p class="resumen">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
+                    <h1 class="titulo-factual mt-5 mb-4">Reportajes</h1>
+                    <p class="resumenFact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
                         incidunt ut
                         labore et dolore magna aliqua.
                     </p>
@@ -137,15 +140,15 @@
                 <div class="col-md-12 pt-5">
                     <ul class="text-left">
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-envelope icono-rrss"></i></a></li>
+                                    class="fa fa-envelope iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-facebook icono-rrss"></i></a></li>
+                                    class="fa fa-facebook iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-share-alt icono-rrss"></i></a></li>
+                                    class="fa fa-share-alt iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-twitter icono-rrss"></i></a></li>
+                                    class="fa fa-twitter iconoFact-rrss"></i></a></li>
                         <li class="list-inline-item"><a href="#" target="_blank"><i
-                                    class="fa fa-whatsapp icono-rrss"></i></a></li>
+                                    class="fa fa-whatsapp iconoFact-rrss"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -154,75 +157,215 @@
     <!-- fin sección color -->
 
     <!-- inicio sección cards -->
-    <section class="container">
-        <div class="row">
-
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <a href="evento.html">
-                    <div class="card-img card-hover">
-                        <img src="img/img/news1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Nombre del informe</h5>
-                            <p class="card-text">Autor(es): Nombre Some quick example</p>
-                            <button type="button" class="tag mb-3">Small button</button>
-
-                            <div class="d-flex justify-content-star">
-                                <p class="mb-0 mr-2">5'</p>
-                                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-                            </div>
-                            <div class="d-flex justify-content-end card-btn-container">
-                                <p class="mb-0 mr-2">Ver más</p>
-                                <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-                            </div>
-                        </div>
-                    </div>
-                </a>
+    <section class="container-fluid fondo blanco pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <h2 class="subTituloFact">Última Publicación</h2>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 ">
+                    <img class="factNews mx-auto ml-auto" src="img/img/plebiscito.png">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <!--  <p class="verdadero">verdad</p> -->
+                    <span class="verdadero">Verdad</span>
+                    <span class="impreciso">Impreciso</span>
+                    <span class="falso">Falso</span>
+                    <h2 class="tituloNota"> El presidente Piñera es un patan</h2>
+                    <span class="fecha2">Fecha de publicación:</span>
+                    <span class="fecha1">22 de julio, 2020</span>
 
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <a href="evento.html">
-                    <div class="card-img card-hover">
-                        <img src="img/img/news1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Nombre del informe</h5>
-                            <p class="card-text">Autor(es): Nombre Some quick example</p>
-                            <button type="button" class="tag mb-3">Small button</button>
-
-                            <div class="d-flex justify-content-star">
-                                <p class="mb-0 mr-2">5'</p>
-                                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-                            </div>
-                            <div class="d-flex justify-content-end card-btn-container">
-                                <p class="mb-0 mr-2">Ver más</p>
-                                <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-md-4 col-lg-4 col-sm-12">
-                <a href="evento.html">
-                    <div class="card-img card-hover">
-                        <img src="img/img/news1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="titulo-card">Nombre del informe</h5>
-                            <p class="card-text">Autor(es): Nombre Some quick example</p>
-                            <button type="button" class="tag mb-3">Small button</button>
-
-                            <div class="d-flex justify-content-star">
-                                <p class="mb-0 mr-2">5'</p>
-                                <img src="img/Iconos/clock-regular.svg" class="icono-tiempo mr-1" alt="">
-                            </div>
-                            <div class="d-flex justify-content-end card-btn-container">
-                                <p class="mb-0 mr-2">Ver más</p>
-                                <img src="img/Iconos/flecha volumen derecha.svg" alt="" class="flecha-in">
-                            </div>
-                        </div>
-                    </div>
-                </a>
+                    <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                        accusantium nostrum
+                        ipsum
+                        reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                    </p>
+                    <!--  
+                    <a href="evento.html"> Leer mas </a>-->
+                    <a href="evento.html">
+                        <span class="fecha1 a-report"> Leer más</span>
+                    </a>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="verdadero">Verdad</span>
+                <h2 class="tituloNota">Título del reportaje</h2>
+                <img class="factNewsImg" src="img/img/diagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="fecha2">Por:</span>
+                <span class="fecha1">Nombre y Apellido</span>
+                <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                    accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt officia accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                </p>
+                <span class="fecha2">Fecha de publicación:</span>
+                <span class="fecha1">22 de julio, 2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <a href="evento.html">
+                    <span class="fecha1 a-report text-left my-3">Leer más</span>
+                </a>
+                <hr class="BlackLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="impreciso">Impreciso</span>
+                <h2 class="tituloNota">Título del reportaje</h2>
+                <img class="factNewsImg" src="img/img/diagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="fecha2">Por:</span>
+                <span class="fecha1">Nombre y Apellido</span>
+                <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                    accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt officia accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                </p>
+                <span class="fecha2">Fecha de publicación:</span>
+                <span class="fecha1">22 de julio, 2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <a href="evento.html">
+                    <span class="fecha1 a-report text-left my-3">Leer más</span>
+                </a>
+                <hr class="BlackLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="verdadero">Verdad</span>
+                <h2 class="tituloNota">Título del reportaje</h2>
+                <img class="factNewsImg" src="img/img/diagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="fecha2">Por:</span>
+                <span class="fecha1">Nombre y Apellido</span>
+                <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                    accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt officia accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                </p>
+                <span class="fecha2">Fecha de publicación:</span>
+                <span class="fecha1">22 de julio, 2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <a href="evento.html">
+                    <span class="fecha1 a-report text-left my-3">Leer más</span>
+                </a>
+                <hr class="BlackLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="impreciso">Impreciso</span>
+                <h2 class="tituloNota">Título del reportaje</h2>
+                <img class="factNewsImg" src="img/img/diagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="fecha2">Por:</span>
+                <span class="fecha1">Nombre y Apellido</span>
+                <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                    accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt officia accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                </p>
+                <span class="fecha2">Fecha de publicación:</span>
+                <span class="fecha1">22 de julio, 2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <a href="evento.html">
+                    <span class="fecha1 a-report text-left my-3">Leer más</span>
+                </a>
+                <hr class="BlackLine">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="falso">Falso</span>
+                <h2 class="tituloNota">Título del reportaje</h2>
+                <img class="factNewsImg" src="img/img/diagram.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <span class="fecha2">Por:</span>
+                <span class="fecha1">Nombre y Apellido</span>
+                <p class="resumen mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt officia
+                    accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Nesciunt officia accusantium nostrum
+                    ipsum
+                    reprehenderit in, voluptatem repudiandae vel natus ad sunt velit quaerat.
+                </p>
+                <span class="fecha2">Fecha de publicación:</span>
+                <span class="fecha1">22 de julio, 2020</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12">
+                <a href="evento.html">
+                    <span class="fecha1 a-report text-left my-3">Leer más</span>
+                </a>
+                <hr class="BlackLine">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="paginación">
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#" class="page-limk">Anterior</a></li>
+                            <li class="page-item"><a href="#" class="page-limk">1</a></li>
+                            <li class="page-item"><a href="#" class="page-limk">2</a></li>
+                            <li class="page-item"><a href="#" class="page-limk">3</a></li>
+                            <li class="page-item"><a href="#" class="page-limk">Siguente</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 

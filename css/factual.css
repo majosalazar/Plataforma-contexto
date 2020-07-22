@@ -13,10 +13,90 @@
     font-weight: bold;
     font-size: 55px;
     line-height: 84px;
-    letter-spacing: 0.01em;  
+    letter-spacing: 0.01em;
     margin-bottom: 20px;
     color: var(--blanco);
 
+}
+
+.tituloNota {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+.subTituloFact {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 37;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+.verdadero {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    background-color:#33B257;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.falso {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #DD553D;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.impreciso {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #E8CD32;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.fecha1{
+    font-family: karla;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+.fecha2{
+    font-family: karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: var(--negro);
+}
+
+.BlackLine{
+    border: 2px solid #000000;
+    background: #000000;
 }
 
 h2 {
@@ -29,7 +109,34 @@ h2 {
     color: var(--blanco);
 }
 
-.breadcrumbs-factual {
+.a-report {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.a-report:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: #000000;
+    transition: left .3s;
+}
+
+.factNewsImg{
+    height: 300px;
+}
+
+.a-report:hover:after {
+    left: 0;
+}
+
+.breadcrumb-factual {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -50,7 +157,7 @@ h2 {
     display: inline-block;
     padding-right: .5rem;
     color: var(--blanco);
-    content: " > ";
+    content: ">";
 }
 
 .resumenFact {
@@ -112,10 +219,10 @@ h2 {
 .reviewFact {
     width: 500;
     display: flex;
-    justify-content:flex-end
+    justify-content: flex-end
 }
 
-.factCardWhite-title{
+.factCardWhite-title {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: 600;
@@ -124,17 +231,21 @@ h2 {
     color: var(--negro);
 }
 
-.factCardWhite-body{
+.factCardWhite-body {
     border: 4px;
     border-color: var(--negro);
     border-style: solid;
 }
 
-.factCardWhite-text{
+.factCardWhite-text {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
     text-align: left;
-    color: var(--negro); 
+    color: var(--negro);
+}
+
+.factLineBlak{
+
 }
