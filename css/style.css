@@ -76,7 +76,7 @@
   font-family: Karla;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 25px;
   line-height: 19px;
   text-align: left;
 
@@ -385,6 +385,11 @@ h3 {
 
 .flecha-gesto {
   width: 130px;
+  padding-right: 30px;
+}
+
+.lupa-gesto{
+  width: 55px;
   padding-right: 30px;
 }
 
