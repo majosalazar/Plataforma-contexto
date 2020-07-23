@@ -61,7 +61,7 @@
     padding-right: 5px;
 }
 
-.impreciso {
+.inchequeable {
     font-family: Karla;
     font-style: normal;
     font-weight: bold;
@@ -72,6 +72,66 @@
     padding-left: 5px;
     padding-right: 5px;
 
+}
+
+.engañoso{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #E14067;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.verdad-pero{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #36ACBA;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.discutible{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #F2491B;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.exagerado{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #b23346;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.falso-pero{
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #3366B2;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .fecha1{
