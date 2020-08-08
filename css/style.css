@@ -111,7 +111,7 @@ p {
 
 .fondo-inicial {
   background-color: var(--crema);
-  height: 100vh;
+  height: 100%;
 }
 
 .fondo-crema {
@@ -200,19 +200,16 @@ button {
   color: #000000;
 }
 
-/*
+
 .frase {
   font-family: Space Grotesk;
   font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 31px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.44px;
-  margin-top: 80%;
+
 }
-*/
+
 
 .nav-link {
   color: var(--negro);
@@ -561,6 +558,95 @@ a:hover {
 
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: var(--negro);
+  font-family: karla;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.iconTitle3 {
+  margin-top: 3.5rem;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.pre-frase {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.sub-frase {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.carousel-indicators li {
+  height: 5px;
+  background-color: #000;
+}
+
+.carousel-indicators {
+  justify-content: center;
+  bottom: -10%;
+
+}
+
+.gesto-home {
+  justify-content: flex-end;
+  height: 7px;
+}
+
+.iconTitle4 {
+  height: 30px;
+}
+
+.bajada-noticia {
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.015em;
+}
+
+.fecha1 {
+  font-family: karla;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: var(--negro);
+}
+
+.a-report {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.a-report:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: #000000;
+  transition: left .3s;
+}
+
+.a-report:hover:after {
+  left: 0;
+}
+
 @media (max-width: 768px) {
   .bloque {
     display: flex;
@@ -571,6 +657,11 @@ a:hover {
 
 
 @media (min-width: 768px) {
+  .fondo-inicial {
+    background-color: var(--crema);
+    height: 100%;
+  }
+
   .isotipo {
     left: 28.27%;
     right: 28.53%;
@@ -639,14 +730,42 @@ a:hover {
   .nav navbar {
     background-color: transparent !important;
   }
+  
+  .pre-frase {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+  }
 
   .frase {
     font-family: Space Grotesk;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
-    line-height: 53px;
+    line-height: 48px;
     margin-bottom: 0px;
+  }
+
+  .bajada-noticia {
+    font-weight: lighter;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.015em;
+  }
+
+  .sub-frase {
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .carousel-indicators {
+    justify-content: center;
+    bottom: 10;
   }
 
   p {
@@ -670,6 +789,11 @@ a:hover {
     margin-bottom: 10px;
     display: inline-block;
 
+  }
+
+  .iconTitle3 {
+    margin-top: 4rem;
+    height: 60px;
   }
 
 }
@@ -802,49 +926,3 @@ section .section-title {
   color: var(--negro);
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: var(--negro);
-  font-family: karla;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.iconTitle3 {
-  margin-top: 100px;
-  height: 70px;
-}
-
-.pre-frase {
-  font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 31px;
-}
-
-.sub-frase {
-  font-family: Space Grotesk;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 25px;
-}
-
-.carousel-indicators li {
-  height: 5px;
-  background-color: #000;
-}
-
-.carousel-indicators {
-  justify-content: flex-start;
-  margin-left: 13%;
-}
-
-.gesto-home {
-  justify-content: flex-end;
-  height: 8px;
-}
-
-.iconTitle4 {
-  height: 30px;
-}
