@@ -200,6 +200,7 @@ button {
   color: #000000;
 }
 
+/*
 .frase {
   font-family: Space Grotesk;
   font-style: normal;
@@ -211,6 +212,7 @@ button {
   letter-spacing: 0.44px;
   margin-top: 80%;
 }
+*/
 
 .nav-link {
   color: var(--negro);
@@ -388,7 +390,7 @@ h3 {
   padding-right: 30px;
 }
 
-.lupa-gesto{
+.lupa-gesto {
   width: 55px;
   padding-right: 30px;
 }
@@ -562,7 +564,6 @@ a:hover {
 @media (max-width: 768px) {
   .bloque {
     display: flex;
-
     overflow-y: hidden;
     overflow-x: auto;
   }
@@ -642,11 +643,10 @@ a:hover {
   .frase {
     font-family: Space Grotesk;
     font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 117.5%;
-    margin-top: 30%;
-
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+    margin-bottom: 0px;
   }
 
   p {
@@ -800,4 +800,51 @@ section .section-title {
 
 .enlace:hover {
   color: var(--negro);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--negro);
+  font-family: karla;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.iconTitle3 {
+  margin-top: 100px;
+  height: 70px;
+}
+
+.pre-frase {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.sub-frase {
+  font-family: Space Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.carousel-indicators li {
+  height: 5px;
+  background-color: #000;
+}
+
+.carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 13%;
+}
+
+.gesto-home {
+  justify-content: flex-end;
+  height: 8px;
+}
+
+.iconTitle4 {
+  height: 30px;
 }
